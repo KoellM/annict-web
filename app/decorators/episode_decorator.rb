@@ -12,6 +12,7 @@ module EpisodeDecorator
 
   def local_title(fallback: true)
     return title if I18n.locale == :ja
+    return title_cn if I18n.locale == :"zh-cn" && title_cn.present?
     return title_en if title_en.present?
     title if fallback
   end

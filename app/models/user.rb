@@ -84,7 +84,7 @@ class User < ApplicationRecord
     authentication_keys: %i[email_username]
 
   enumerize :allowed_locales, in: ApplicationRecord::LOCALES, multiple: true, default: ApplicationRecord::LOCALES
-  enumerize :locale, in: %i[ja en]
+  enumerize :locale, in: %i[ja en zh-CN]
   enumerize :role, in: {user: 0, admin: 1, editor: 2}, default: :user, scope: true
 
   belongs_to :gumroad_subscriber, optional: true

@@ -14,6 +14,7 @@
 #  thumbnail_file_size    :integer
 #  thumbnail_updated_at   :datetime
 #  title                  :string           not null
+#  title_cn               :string           default(""), not null
 #  title_en               :string           default(""), not null
 #  unpublished_at         :datetime
 #  url                    :string           not null

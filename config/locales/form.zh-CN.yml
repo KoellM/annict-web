@@ -1,0 +1,37 @@
+zh-CN:
+  form:
+    attributes:
+      forms/work_record_form:
+        comment: 感想
+        rating_animation: 视频
+        rating_character: 角色
+        rating_music: 音乐
+        rating_overall: 整体
+        rating_story: 故事
+      forms/episode_record_form:
+        comment: 感想
+        rating: 评价
+      forms/registration_form:
+        email: 邮箱
+        terms_and_privacy_policy_agreement: 服务条款及隐私政策
+        username: 用户名
+      forms/sign_in_form:
+        back: 返回
+        email: 邮箱
+      forms/sign_up_form:
+        back: 返回
+        email: 邮箱
+      forms/user_email_form:
+        email: 邮箱
+    errors:
+      models:
+        forms/registration_form:
+          attributes:
+            email:
+              email_uniqueness: 已经存在
+            username:
+              username_uniqueness: 已经存在
+        forms/user_email_form:
+          attributes:
+            email:
+              email_uniqueness: 已经存在

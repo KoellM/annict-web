@@ -15,6 +15,7 @@ module Beta
         field :title_kana, String, null: true
         field :title_ro, String, null: true
         field :title_en, String, null: true
+        field :title_cn, String, null: true
         field :media, Beta::Types::Enums::Media, null: false
         field :season_year, Integer, null: true
         field :season_name, Beta::Types::Enums::SeasonName, null: true

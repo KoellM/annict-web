@@ -17,6 +17,9 @@ module Canary
         field :name_en, String,
           null: false
 
+        field :name_cn, String,
+          null: false
+
         field :accurate_name, String,
           null: false,
           description: "担当者名。名義が異なる場合2つの名前を併記する。例: ふでやすかずゆき (筆安一幸)"
@@ -25,10 +28,17 @@ module Canary
           null: false,
           description: "担当者名 (英)。名義が異なる場合2つの名前を併記する。"
 
+        field :accurate_name_cn, String,
+          null: false,
+          description: "担当者名 (中国語)。名義が異なる場合2つの名前を併記する。"
+
         field :role, String,
           null: false
 
         field :role_en, String,
+          null: false
+
+        field :role_cn, String,
           null: false
 
         field :sort_number, Integer,
@@ -48,6 +58,10 @@ module Canary
           object.decorate.accurate_name_en
         end
 
+        def accurate_name_cn
+          object.decorate.accurate_name_cn
+        end
+
         def role
           return object.role_other if object.role_value == "other"
 
@@ -58,6 +72,12 @@ module Canary
           return object.role_other_en if object.role_value == "other"
 
           I18n.t("enumerize.staff.role.#{object.role_value}", locale: :en)
+        end
+
+        def role_cn
+          return object.role_other_cn if object.role_value == "other"
+
+          I18n.t("enumerize.staff.role.#{object.role_value}", locale: :"zh-CN")
         end
 
         def work

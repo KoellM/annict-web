@@ -9,15 +9,19 @@
 #  deleted_at           :datetime
 #  favorite_users_count :integer          default(0), not null
 #  name                 :string           not null
+#  name_cn              :string           default(""), not null
 #  name_en              :string           default(""), not null
 #  name_kana            :string           default(""), not null
 #  staffs_count         :integer          default(0), not null
 #  twitter_username     :string
+#  twitter_username_cn  :string           default(""), not null
 #  twitter_username_en  :string           default(""), not null
 #  unpublished_at       :datetime
 #  url                  :string
+#  url_cn               :string           default(""), not null
 #  url_en               :string           default(""), not null
 #  wikipedia_url        :string
+#  wikipedia_url_cn     :string           default(""), not null
 #  wikipedia_url_en     :string           default(""), not null
 #  created_at           :datetime         not null
 #  updated_at           :datetime         not null

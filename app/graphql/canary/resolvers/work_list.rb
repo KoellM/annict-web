@@ -18,7 +18,7 @@ module Canary
 
         if titles
           @work_list = @work_list.ransack(
-            title_or_title_en_or_title_kana_or_title_alter_or_title_alter_en_cont_any: titles
+            title_or_title_en_or_title_cn_title_kana_or_title_alter_or_title_alter_en_cont_any: titles
           ).result
         end
 

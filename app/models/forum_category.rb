@@ -6,9 +6,11 @@
 #
 #  id                :bigint           not null, primary key
 #  description       :string           not null
+#  description_cn    :string           default(""), not null
 #  description_en    :string           not null
 #  forum_posts_count :integer          default(0), not null
 #  name              :string           not null
+#  name_cn           :string           default(""), not null
 #  name_en           :string           not null
 #  postable_role     :string           not null
 #  slug              :string           not null

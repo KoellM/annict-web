@@ -61,8 +61,10 @@ class ApplicationRecord < ActiveRecord::Base
   def _local_property(property_name, fallback: true)
     property_ja = send(property_name.to_sym)
     property_en = send("#{property_name}_en".to_sym)
+    property_cn = send("#{property_name}_cn".to_sym)
 
     return property_ja if I18n.locale == :ja
+    return property_cn if I18n.locale == :"zh-CN"
     return property_en if property_en.present?
 
     property_ja if fallback

@@ -2,10 +2,10 @@ ja:
   activerecord:
     attributes:
       cast:
-        character_id: キャラクター
-        name_en: 名義 (英語)
+        character_id: 角色
+        name_en: 
         name: 名義
-        person_id: キャスト
+        person_id: 演员
         sort_number: ソート番号
         work_id: アニメ
       channel:

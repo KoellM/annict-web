@@ -27,6 +27,11 @@
   </div>
 
   <div class="mb-3">
+    <%= f.label :title_cn %>
+    <%= f.text_field :title_cn, class: "form-control" %>
+  </div>
+  
+  <div class="mb-3">
     <%= f.label :media, class: "c-label-required" %>
     <%= f.select(
       :media,

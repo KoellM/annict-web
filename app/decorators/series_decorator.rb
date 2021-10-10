@@ -5,6 +5,7 @@ module SeriesDecorator
 
   def local_name
     return name if I18n.locale == :ja
+    return name_cn if I18n.locale == :"zh-CN" && name_cn.present?
     return name_ro if name_ro.present?
     return name_en if name_en.present?
     name

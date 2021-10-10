@@ -1,0 +1,11 @@
+<%= @email %> 您好。<br>
+<br>
+请点击以下链接注册。<br>
+链接的有效期为 2 小时。<br>
+<br>
+<%= link_to @url, @url %><br>
+<br>
+如果此邮件非本人操作，请不要点击链接并忽略此邮件。<br>
+<br>
+Annict<br>
+<%= link_to ENV.fetch("ANNICT_URL"), ENV.fetch("ANNICT_URL") %>

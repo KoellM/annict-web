@@ -1,0 +1,121 @@
+zh-CN:
+  resources:
+    _common:
+      new: 新建
+      published: 公开
+      unpublished: 不公开
+    channel:
+      new_channels: 新建频道
+    channel_group:
+      new_channel_groups: 新建频道分组
+    character:
+      state:
+        published: 公开
+        hidden: 不公开
+      created: 已新建
+      edit: 编辑角色
+      go_to_character: 查看角色详细
+      new_characters: 新建角色
+      character_list: 全部角色
+      there_are_no_characters: 未发现此角色
+      updated: 已更新
+    cast:
+      created: 已创建
+      deleted: 已删除
+      new_casts: 新建演员
+      cast_list: 全部演员
+      there_are_no_casts: 未发现此演员
+      unpublished: 已取消公开
+      updated: 已更新
+    comment:
+      no_comments: 暂无评论
+    episode:
+      created: 已新建
+      edit_episodes: 编辑章节
+      episodes_list: 全部章节
+      new_episodes: 新建章节
+      previous_episode: 上一章节
+      updated: 已更新
+    forum_category:
+      site_news: 通知
+      general: 普通
+      feedback: 反馈
+      db_request: 编辑请求
+    forum_post:
+      new: 新建
+    organization:
+      state:
+        published: 公开
+        hidden: 不公开
+      created: 已创建
+      deleted: 已删除
+      go_to_organization: 查看团体详细
+      new_organization: 新建团体
+      twitter_hashtag_placeholder: e.g. paworks_info
+      twitter_hashtag_en_placeholder: e.g. paworks_eng
+      unpublished: 已取消公开
+      updated: 已更新
+      organization_list: 全部团体
+    person:
+      state:
+        published: 公开
+        hidden: 非公开
+      created: 已创建
+      deleted: 已删除
+      go_to_person: 查看人物详细
+      new_person: 新建人物
+      twitter_hashtag_placeholder: e.g. nazukakaori
+      unpublished: 已取消公开
+      updated: 已更新
+      person_list: 全部人物
+    slot:
+      created: 已创建
+      new_slots: 新建放送预定
+      slot_list: 全部放送预定
+      started_at_eg: e.g. 2015-04-01 23:00
+      there_are_no_slots: 没有找到此放送预定
+      updated: 已更新
+    season:
+      yearly:
+        all: "%{year}年"
+        winter: "%{year}年冬季"
+        spring: "%{year}年春季"
+        summer: "%{year}年夏季"
+        autumn: "%{year}年秋季"
+      no_season: 时间未定
+    series:
+      state:
+        published: 公开
+        hidden: 非公开
+      new_series: 新建系列
+    series_work:
+      new_series_works: 新建系列作品
+    staff:
+      created: 已创建
+      deleted: 已删除
+      new_staffs: 新建Staff
+      staff_list: 全部Staff
+      there_are_no_staffs: 没有找到此Staff
+      unpublished: 已取消公开
+      updated: 已更新
+    program:
+      new_programs: 新建
+    user:
+      is_wrong: 无效
+      start_date: "注册时间: %{started_on} (%{days}天)"
+    userland_project:
+      delete: 删除项目
+      edit: 编辑项目
+      new: 新建项目
+    work:
+      state:
+        published: 公开
+        hidden: 非公开
+      created: 已创建
+      go_to_work: 查看作品详细
+      new_work: 新建作品
+      no_images: 作品无图片
+      started_on_eg: e.g. 2017-09-01
+      twitter_hashtag_placeholder: e.g. なのん
+      twitter_username_placeholder: e.g. nonnontv
+      updated: 已更新

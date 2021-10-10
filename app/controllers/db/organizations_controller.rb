@@ -68,8 +68,8 @@ module Db
 
     def organization_params
       params.require(:organization).permit(
-        :name, :name_en, :name_kana, :url, :url_en, :wikipedia_url,
-        :wikipedia_url_en, :twitter_username, :twitter_username_en
+        :name, :name_en, :name_cn, :name_kana, :url, :url_en, :url_cn, :wikipedia_url,
+        :wikipedia_url_en, :wikipedia_url_cn, :twitter_username, :twitter_username_en, :twitter_username_cn
       )
     end
   end

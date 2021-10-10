@@ -12,6 +12,17 @@
     <div class="card u-card-flat">
       <div class="card-body">
         <div class="g-3 row">
+          <% if @work.title.present? && I18n.locale != :ja %>
+            <div class="col-6 col-sm-4">
+              <div class="fw-bold small">
+                <%= t "activerecord.attributes.work.title" %>
+              </div>
+              <div>
+                <%= @work.title %>
+              </div>
+            </div>
+          <% end %>
+
           <% if @work.title_kana.present? %>
             <div class="col-6 col-sm-4">
               <div class="fw-bold small">
@@ -30,6 +41,17 @@
               </div>
               <div>
                 <%= @work.title_en %>
+              </div>
+            </div>
+          <% end %>
+
+          <% if @work.title_cn.present? %>
+            <div class="col-6 col-sm-4">
+              <div class="fw-bold small">
+                <%= t "activerecord.attributes.work.title_cn" %>
+              </div>
+              <div>
+                <%= @work.title_cn %>
               </div>
             </div>
           <% end %>

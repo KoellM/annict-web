@@ -11,7 +11,7 @@ module Localizable
   included do
     around_action :switch_time_zone, if: :current_user
 
-    helper_method :local_url_with_path, :locale_en?, :locale_ja?, :localable_resources
+    helper_method :local_url_with_path, :locale_en?, :locale_ja?, :locale_zh_cn?, :localable_resources
   end
 
   private
@@ -22,6 +22,8 @@ module Localizable
     case [request.subdomain, request.domain].select(&:present?).join(".")
     when ENV.fetch("ANNICT_EN_DOMAIN")
       I18n.with_locale(:en, &action)
+    when ENV.fetch("ANNICT_CN_DOMAIN")
+      I18n.with_locale(:"zh-CN", &action)
     else
       I18n.with_locale(:ja, &action)
     end
@@ -40,6 +42,10 @@ module Localizable
     locale.to_s == "en"
   end
 
+  def locale_zh_cn?
+    locale.to_s == "zh-CN"
+  end
+
   def local_url_with_path(locale: I18n.locale)
     ["#{helpers.local_url(locale: locale)}#{request.path}", request.query_string].select(&:present?).join("?")
   end
@@ -47,7 +53,15 @@ module Localizable
   def preferred_locale
     preferred_languages = http_accept_language.user_preferred_languages
     # Chrome returns "ja", but Safari would return "ja-JP", not "ja".
-    preferred_languages.any? { |lang| lang.match?(/ja/) } ? :ja : :en
+    preferred_languages.any? do |lang| 
+      if lang.match?(/ja/)
+        return :ja
+      elsif lang.match?(/zh/)
+        return :"zh-CN"
+      else
+        return :en
+      end
+    end
   end
 
   def switch_time_zone(&block)
@@ -60,6 +74,8 @@ module Localizable
       localable_resources_with_own(resources)
     elsif !user_signed_in? && locale_en?
       resources.with_locale(:en)
+    elsif !user_signed_in? && locale_zh_cn?
+      resources.with_locale(:"zh-CN")
     elsif !user_signed_in? && locale_ja?
       resources.with_locale(:ja)
     else

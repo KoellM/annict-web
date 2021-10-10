@@ -1,0 +1,138 @@
+<% content_for :head_vendor_assets do %>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+<% end %>
+
+<p>
+  “Annict Supporters” 是面向 Annict 粉丝的订阅计划。
+  您可以按月或按年付费订阅，支持Annict的发展。
+  <br>
+  (主要为服务器费用)
+</p>
+
+<h2 class="fw-bold h4 my-5 text-center">
+  特典
+</h2>
+
+<p>
+  当您成为支持者时，您将获得以下特典。
+</p>
+
+<div class="gx-3 row">
+  <div class="col-12 col-sm-6">
+    <h3 class="fw-bold h4">
+      在个人页面上显示支持者徽章
+    </h3>
+
+    <p class="mb-0">
+      显示支持者徽章。
+      <div class="small">
+        (可隐藏)
+      </div>
+    </p>
+  </div>
+</div>
+
+<h2 class="fw-bold h4 my-5 text-center">
+  价格和支付方式
+</h2>
+
+<p>
+  支持者订阅价格为 JPY¥290/月 或年付 JPY¥2,900/年 (JPY¥242/月) 。
+  按年付费时，可免费使用2个月。
+  <br>
+  ※支付根据最新的汇率以美元进行。
+</p>
+
+<p class="mb-0">
+  支付时将使用「<a href="https://gumroad.com" target="_blank" rel="noopener">Gumroad</a>」，
+  可以使用信用卡或PayPal支付。
+  可以随时在 Gumroad 上取消订阅。
+</p>
+
+<div class="my-5 text-center">
+  <a class="btn btn-primary" href="https://gum.co/AnnictJP">
+    <i class="far fa-shopping-cart me-1"></i>
+    使用 Gumroad 支付
+  </a>
+</div>
+
+<h2 class="fw-bold h4 my-5 text-center">
+  关联 Gumroad
+</h2>
+
+<p class="mb-0">
+  为了知晓您已经在 Gumroad 上订阅，
+  必须要关联 Gumroad 账号。
+</p>
+
+<div class="my-5 text-center">
+  <% if user_signed_in? && current_user.authorized_to?(:gumroad) %>
+    <button class="btn u-btn-gumroad" disabled="">
+      <i class="far fa-link me-2"></i>
+      已关联 Gumroad 账号
+    </button>
+  <% else %>
+    <%= button_to user_gumroad_omniauth_authorize_path(back: supporters_path), class: "btn u-btn-gumroad", data: { turbo: "false" } do %>
+      <i class="far fa-link me-1"></i>
+      关联 Gumroad 账号
+    <% end %>
+  <% end %>
+</div>
+
+<% if user_signed_in? %>
+  <h2 class="h4 text-center my-5 fw-bold">
+    支持者信息
+  </h2>
+
+  <% if current_user.supporter? %>
+    <p>
+     感谢您成为支持者！您正在以支持者状态使用 Annict。
+    </p>
+
+    <dl class="mb-0 row">
+      <dt class="col-6 text-end">
+        Gumroad ID
+      </dt>
+      <dd class="col-6">
+        <%= current_user.gumroad_subscriber.gumroad_id %>
+      <dd>
+
+      <dt class="col-6 text-end">
+        加入时间
+      </dt>
+      <dd class="col-6">
+        <%= display_time(current_user.gumroad_subscriber.gumroad_created_at) %>
+      </dd>
+
+      <% if current_user.gumroad_subscriber.gumroad_cancelled_at.present? %>
+        <dt class="col-6 text-end">
+          取消时间
+        </dt>
+        <dd class="col-6">
+          <%= display_time(current_user.gumroad_subscriber.gumroad_cancelled_at) %>
+        </dd>
+      <% end %>
+    </dl>
+  <% else %>
+    <p>
+      您还没有成为支持者。
+    </p>
+
+    <% if user_signed_in? && current_user.authorized_to?(:gumroad) %>
+      <p>
+        如果您已订阅，请点击下方重新关联 Gumroad 账号。
+      </p>
+
+      <div class="mt-5 mb-4 text-center">
+        <%= button_to user_gumroad_omniauth_authorize_path(back: supporters_path), class: "btn u-btn-gumroad", data: { turbo: "false" } do %>
+          <i class="far fa-link me-2">
+          重新关联 Gumroad 账号
+        <% end %>
+      </div>
+    <% else %>
+      <p>
+        如果您已订阅，请关联 Gumroad 账号。
+      </p>
+    <% end %>
+  <% end %>
+<% end %>

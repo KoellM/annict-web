@@ -22,6 +22,10 @@ module Canary
           null: true,
           description: "タイトル (英語)"
 
+        field :title_cn, String,
+          null: true,
+          description: "タイトル (中国語)"
+
         field :title_kana, String,
           null: true,
           description: "タイトル (かな)"

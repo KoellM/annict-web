@@ -8,6 +8,7 @@
 #  aasm_state     :string           default("published"), not null
 #  deleted_at     :datetime
 #  name           :string           not null
+#  name_cn        :string           default(""), not null
 #  name_en        :string           default(""), not null
 #  sort_number    :integer          default(0), not null
 #  unpublished_at :datetime
@@ -78,6 +79,11 @@ class Cast < ApplicationRecord
   def accurate_name_en
     return name_en if name_en == person.name_en
     "#{name_en} (#{person.name_en})"
+  end
+
+  def accurate_name_cn
+    return name_cn if name_cn == person.name_cn
+    "#{name_cn} (#{person.name_cn})"
   end
 
   def local_name_with_old

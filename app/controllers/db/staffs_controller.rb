@@ -85,7 +85,7 @@ module Db
     def staff_params
       params.require(:staff).permit(
         :resource_id, :resource_type, :name, :role, :role_other, :sort_number,
-        :name_en, :role_other_en
+        :name_en, :name_cn, :role_other_en, :role_other_cn
       )
     end
   end

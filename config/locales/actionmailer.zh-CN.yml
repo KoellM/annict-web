@@ -1,0 +1,24 @@
+zh-CN:
+  email_notification_mailer:
+    _layout:
+      unsubscribe: "退订"
+      unsubscribe_message: "您收到这封邮件说明您是Annict的用户。"
+    favorite_works_added:
+      favorites_joins_work: "将此动画相关加入至喜欢列表"
+      subject: "你喜欢的相关作品%{n}已加入Annict！"
+      view_detail: "查看相关"
+    followed_user:
+      followed_you: "%{name} (@%{username})已关注您。"
+      subject: "%{name} (@%{username})在Annict关注了您！"
+      view_profile: 查看个人资料
+    liked_episode_record:
+      liked_your_episode_records: "%{name} (@%{username})点赞了您的评论。"
+      subject: "%{name} (@%{username})点赞了您的 %{title} 评论"
+      view_profile: 查看个人资料
+      view_record: 查看评论
+    related_works_added:
+      related_works: 相关作品
+      subject: "あなたのライブラリに登録されている作品に関連するアニメ%{n}作品がAnnictに登録されました！"
+  mention_mailer:
+    notify:
+      subject: "%{name} (@%{username})在Annict提到了您！"

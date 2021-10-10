@@ -35,6 +35,8 @@ module ControllerCommon
         localable_resources_with_own(resources)
       elsif !user_signed_in? && locale_en?
         resources.with_locale(:en)
+      elsif !user_signed_in? && locale_zh_cn?
+        resources.with_locale(:"zh-CN")
       elsif !user_signed_in? && locale_ja?
         resources.with_locale(:ja)
       else

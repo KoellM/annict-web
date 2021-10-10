@@ -11,6 +11,7 @@
 #  episode_records_count       :integer          default(0), not null
 #  fetch_syobocal              :boolean          default(FALSE), not null
 #  number                      :string(510)
+#  number_cn                   :string           default(""), not null
 #  number_en                   :string           default(""), not null
 #  ratings_count               :integer          default(0), not null
 #  raw_number                  :float
@@ -19,6 +20,7 @@
 #  score                       :float
 #  sort_number                 :integer          default(0), not null
 #  title                       :string(510)
+#  title_cn                    :string           default(""), not null
 #  title_en                    :string           default(""), not null
 #  title_ro                    :string           default(""), not null
 #  unpublished_at              :datetime

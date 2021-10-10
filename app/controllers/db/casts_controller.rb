@@ -74,7 +74,7 @@ module Db
     end
 
     def cast_params
-      params.require(:cast).permit(:character_id, :person_id, :name, :name_en, :sort_number)
+      params.require(:cast).permit(:character_id, :person_id, :name, :name_en, :name_cn, :sort_number)
     end
   end
 end

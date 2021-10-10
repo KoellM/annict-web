@@ -69,11 +69,11 @@ module Db
 
     def character_params
       params.require(:character).permit(
-        :name, :name_kana, :name_en, :series_id, :nickname, :nickname_en,
+        :name, :name_kana, :name_en, :name_cn, :series_id, :nickname, :nickname_en, :nickname_cn,
         :birthday, :birthday_en, :age, :age_en, :blood_type, :blood_type_en, :height,
-        :height_en, :weight, :weight_en, :nationality, :nationality_en, :occupation,
-        :occupation_en, :description, :description_en, :description_source,
-        :description_source_en
+        :height_en, :height_cn, :weight, :weight_en, :weight_cn, :nationality, :nationality_en, :nationality_cn, :occupation,
+        :occupation_en, :occupation_cn, :description, :description_en, :description_cn, :description_source,
+        :description_source_en, :description_cn
       )
     end
   end

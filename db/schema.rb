@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_09_083311) do
+ActiveRecord::Schema.define(version: 2021_10_10_082011) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.string "name_en", default: "", null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "name_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_casts_on_aasm_state"
     t.index ["character_id"], name: "index_casts_on_character_id"
     t.index ["deleted_at"], name: "index_casts_on_deleted_at"
@@ -180,6 +181,18 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.bigint "series_id"
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "name_cn", default: "", null: false
+    t.string "kind_cn", default: "", null: false
+    t.string "nickname_cn", default: "", null: false
+    t.string "birthday_cn", default: "", null: false
+    t.string "age_cn", default: "", null: false
+    t.string "blood_type_cn", default: "", null: false
+    t.string "height_cn", default: "", null: false
+    t.string "weight_cn", default: "", null: false
+    t.string "nationality_cn", default: "", null: false
+    t.string "occupation_cn", default: "", null: false
+    t.string "description_cn", default: "", null: false
+    t.string "description_source_cn", default: "", null: false
     t.index ["deleted_at"], name: "index_characters_on_deleted_at"
     t.index ["favorite_users_count"], name: "index_characters_on_favorite_users_count"
     t.index ["name", "series_id"], name: "index_characters_on_name_and_series_id", unique: true
@@ -368,6 +381,8 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.string "number_en", default: "", null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "title_cn", default: "", null: false
+    t.string "number_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_episodes_on_aasm_state"
     t.index ["deleted_at"], name: "index_episodes_on_deleted_at"
     t.index ["prev_episode_id"], name: "index_episodes_on_prev_episode_id"
@@ -444,6 +459,8 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.integer "forum_posts_count", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name_cn", default: "", null: false
+    t.string "description_cn", default: "", null: false
     t.index ["slug"], name: "index_forum_categories_on_slug", unique: true
   end
 
@@ -666,6 +683,10 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.integer "staffs_count", default: 0, null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "name_cn", default: "", null: false
+    t.string "url_cn", default: "", null: false
+    t.string "wikipedia_url_cn", default: "", null: false
+    t.string "twitter_username_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_organizations_on_aasm_state"
     t.index ["deleted_at"], name: "index_organizations_on_deleted_at"
     t.index ["favorite_users_count"], name: "index_organizations_on_favorite_users_count"
@@ -699,6 +720,11 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.integer "staffs_count", default: 0, null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "name_cn", default: "", null: false
+    t.string "nickname_cn", default: "", null: false
+    t.string "url_cn", default: "", null: false
+    t.string "wikipedia_url_cn", default: "", null: false
+    t.string "twitter_username_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_people_on_aasm_state"
     t.index ["casts_count"], name: "index_people_on_casts_count"
     t.index ["deleted_at"], name: "index_people_on_deleted_at"
@@ -842,6 +868,8 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.datetime "unpublished_at"
     t.string "name_alter", default: "", null: false
     t.string "name_alter_en", default: "", null: false
+    t.string "name_cn", default: "", null: false
+    t.string "name_alter_cn", default: "", null: false
     t.index ["deleted_at"], name: "index_series_on_deleted_at"
     t.index ["name"], name: "index_series_on_name", unique: true
     t.index ["unpublished_at"], name: "index_series_on_unpublished_at"
@@ -857,6 +885,7 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.datetime "updated_at", null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "summary_cn", default: "", null: false
     t.index ["deleted_at"], name: "index_series_works_on_deleted_at"
     t.index ["series_id", "work_id"], name: "index_series_works_on_series_id_and_work_id", unique: true
     t.index ["series_id"], name: "index_series_works_on_series_id"
@@ -938,6 +967,8 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.string "role_other_en", default: "", null: false
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "name_cn", default: "", null: false
+    t.string "role_other_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_staffs_on_aasm_state"
     t.index ["deleted_at"], name: "index_staffs_on_deleted_at"
     t.index ["resource_id", "resource_type"], name: "index_staffs_on_resource_id_and_resource_type"
@@ -999,6 +1030,7 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.text "image_data"
     t.datetime "deleted_at"
     t.datetime "unpublished_at"
+    t.string "title_cn", default: "", null: false
     t.index ["deleted_at"], name: "index_trailers_on_deleted_at"
     t.index ["unpublished_at"], name: "index_trailers_on_unpublished_at"
     t.index ["work_id"], name: "index_trailers_on_work_id"
@@ -1027,6 +1059,7 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.integer "userland_projects_count", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name_cn", default: "", null: false
   end
 
   create_table "userland_project_members", force: :cascade do |t|
@@ -1281,6 +1314,11 @@ ActiveRecord::Schema.define(version: 2021_08_09_083311) do
     t.string "title_alter", default: "", null: false
     t.string "title_alter_en", default: "", null: false
     t.datetime "unpublished_at"
+    t.string "title_cn", default: "", null: false
+    t.string "official_site_url_cn", default: "", null: false
+    t.string "wikipedia_url_cn", default: "", null: false
+    t.string "synopsis_cn", default: "", null: false
+    t.string "synopsis_source_cn", default: "", null: false
     t.index ["aasm_state"], name: "index_works_on_aasm_state"
     t.index ["deleted_at"], name: "index_works_on_deleted_at"
     t.index ["key_pv_id"], name: "index_works_on_key_pv_id"

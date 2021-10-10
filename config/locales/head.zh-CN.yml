@@ -1,0 +1,271 @@
+zh-CN:
+  head:
+    meta:
+      description:
+        _common: Annict (アニクト)是一个轻松记录动画、将动画的感想分享给朋友的站点。再也不会出现「今天我看了哪部作品的哪一话来着？」。
+        work_infos:
+          show: 查看动画「%{title}」的最新情报！
+        casts:
+          index: 查看动画「%{title}」的演员！
+        character_fans:
+          index: 查看 '%{character_name} 的粉丝！'
+        characters:
+          index: 查看动画「%{title}」的角色！
+          show: 在 Annict 查看 %{name}！
+        episodes:
+          index: '查看动画「%{title}」的章节！'
+          show: '查看动画「%{work_title}」%{episode_title_with_number}的感想！'
+        favorite_characters:
+          index: '查看 %{profile_name} (%{username}) 喜欢的角色！'
+        favorite_organizations:
+          index: '查看 %{profile_name} (%{username}) 喜欢的团体！'
+        favorite_people:
+          index: '查看 %{profile_name} (%{username}) 喜欢的人物！'
+        libraries:
+          show: '查看 %{profile_name} (%{username})の%{action}アニメをチェック！'
+        organization_fans:
+          index: '查看 %{organization_name} 的粉丝！'
+        organizations:
+          show: '查看 %{name} 的信息！'
+        people:
+          show: '查看 %{name} 的信息！'
+        person_fans:
+          index: '查看 %{person_name} 的粉丝！'
+        profiles:
+          show: 查看 %{profile_name} (%{username}) 的个人资料！
+        records:
+          index: '查看 %{profile_name} (%{username}) 的记录！'
+          show: '查看 %{profile_name} (%{username}) 对 %{trackable_title} 的记录！'
+        related_works:
+          index: 查看动画「%{title}」的相关作品！
+        sign_in:
+          new: 欢迎回来！
+        sign_up:
+          new: 注册 Annict 账号，保存你的观看记录！
+        staffs:
+          index: '查看动画「%{title}」的 Staff！'
+        users:
+          followers: 查看 %{profile_name} (%{username}) 的个人资料！
+          following: 查看 %{profile_name} (%{username}) 的个人资料！
+        videos:
+          index: 查看动画「%{title}」的视频！
+        works:
+          popular: 查看人气动画！
+          season: '查看动画 %{name}！'
+          show: 查看动画「%{title}」的信息及感想！
+        work_records:
+          index: '查看动画「%{work_title}」的感想！'
+          show: '查看 %{profile_name} (%{username}) 对「%{work_title}」的记录！'
+      keywords:
+        _common: annict, anime, review
+    title:
+      work_infos:
+        show: 动画「%{title}」的信息
+      work_records:
+        index: 动画「%{work_title}」的记录及感想
+      casts:
+        index: 动画「%{title}」的演员
+      channels:
+        index: 频道列表
+      character_fans:
+        index: '%{character_name} 的粉丝列表'
+      characters:
+        index: '动画「%{title}」的角色'
+        show: '%{name}'
+      comments:
+        edit: 编辑评论
+      db:
+        activities:
+          index: 活动
+        casts:
+          activities: 活动
+          edit: 编辑演员
+          index: 全部演员
+          new: 新建演员
+        channel_groups:
+          edit: '%{name}'
+          index: 频道列表分组
+          new: 新建频道分组
+        channels:
+          edit: '%{name}'
+          index: 频道列表
+          new: 新建频道
+        characters:
+          edit: '%{name}'
+          index: 全部角色
+          new: 新建角色
+        episodes:
+          activities: 活动
+          edit: 编辑章节
+          index: 全部章节
+          new: 新建章节
+        organizations:
+          edit: '%{name}'
+          index: 全部团体
+          new: 新建团体
+        people:
+          edit: '%{name}'
+          index: 全部人物
+          new: 新建人物
+        slots:
+          activities: 活动
+          edit: 编辑放送预定
+          index: 全部放送预定
+          new: 新建放送预定
+        trailers:
+          activities: 活动
+          edit: 编辑PV
+          index: 全部PV
+          new: 新建PV
+        searches:
+          show: 搜索
+        series:
+          edit: 编辑系列 | %{title}
+          index: 全部系列
+          new: 新建系列
+        series_works:
+          activities: 活动
+          edit: 编辑系列作品
+          index: 全部系列作品
+          new: 新建系列作品
+        staffs:
+          activities: 活动
+          edit: 编辑Staff
+          index: 全部Staff
+          new: 新建Staff
+        programs:
+          activities: 活动
+          edit: 编辑放送信息
+          index: 全部放送信息
+          new: 新建放送信息
+        work_images:
+          show: 作品图标
+        works:
+          activities: 活动
+          edit: '%{title}'
+          index: 全部作品
+          new: 新建作品
+      episodes:
+        index: 动画「%{title}」的章节
+        show: 动画「%{work_title}」%{episode_title_with_number}
+      favorite_characters:
+        index: '%{profile_name} (%{username}) 喜欢的角色'
+      favorite_organizations:
+        index: '%{profile_name} (%{username}) 喜欢的团体'
+      favorite_people:
+        index: '%{profile_name} (%{username}) 喜欢的人物'
+      forum:
+        categories:
+          show: '%{name}'
+        comments:
+          edit: '编辑评论'
+        home:
+          index: Forum
+        posts:
+          edit: '编辑文章'
+          new: '新建文章'
+          show: '%{title}'
+      friends:
+        index: 发现朋友
+      home:
+        show: Annict
+      legacy_sign_in:
+        new: 使用密码登录
+      libraries:
+        show: '%{profile_name} (%{username})が%{action}アニメ'
+      mutes:
+        index: 静音
+      notifications:
+        index: 通知
+      oauth_users:
+        new: 注册
+      oauth:
+        applications:
+          edit: 编辑应用程序
+          index: 全部应用程序
+          new: 新建应用程序
+          show: '%{application_name} | 应用程序详细'
+        authorizations:
+          new: 应用程序验证
+          show: 验证码
+      options:
+        index: 选项
+      organization_fans:
+        index: '%{organization_name} 的粉丝列表'
+      organizations:
+        show: '%{name}'
+      pages:
+        legal: 基于特定商业法的记载
+        privacy: 隐私政策
+        terms: 服务条款
+      passwords:
+        edit: 忘记密码？
+        new: 忘记密码？
+      person_fans:
+        index: '%{person_name} 的粉丝列表'
+      people:
+        show: '%{name}'
+      slots:
+        index: 放送预定
+      profiles:
+        show: '%{profile_name} (%{username})'
+      providers:
+        index: 第三方服务
+      records:
+        edit: '编辑记录'
+        index: '%{profile_name} (%{username})的全部记录'
+        show: '%{profile_name} (%{username})对%{trackable_title}的感想'
+      related_works:
+        index: 动画「%{title}」的相关作品
+      searches:
+        show: '搜索%{q}'
+      settings:
+        accounts:
+          show: 账户
+        apps:
+          index: 应用程序
+        emails:
+          show: 邮箱
+        email_notifications:
+          show: 邮件通知
+          unsubscribe: 取消订阅邮件
+        passwords:
+          show: 密码
+        profiles:
+          show: 个人资料
+        tokens:
+          edit: 编辑个人访问令牌
+          new: 创建个人访问令牌
+      sign_in:
+        new: 登录
+      sign_up:
+        new: 注册
+      staffs:
+        index: 动画「%{title}」的Staff
+      supporters:
+        show: Annict Supporters
+      tracks:
+        show: 记录
+      userland:
+        home:
+          index: 用户空间
+        projects:
+          edit: 编辑个人资料 - 用户空间
+          new: 新建个人资料 - 用户空间
+          show: '%{name} - 用户空间'
+      users:
+        followers: '正在关注 %{profile_name} (%{username}) 的用户'
+        following: '正在关注 %{profile_name} (%{username}) 的用户'
+      videos:
+        index: 动画「%{title}」的视频
+      welcome:
+        show: 构建、分享所见的动画世界
+      work_records:
+        edit: 编辑记录
+        index: 动画「%{work_title}」的全部记录
+        show: '动画「%{work_title}」的记录 by %{profile_name} (%{username})'
+      works:
+        newest: 最新动画
+        popular: 人气动画
+        season: '%{name}动画'
+        show: '动画「%{title}」'

@@ -8,6 +8,7 @@
 #  aasm_state     :string           default("published"), not null
 #  deleted_at     :datetime
 #  summary        :string           default(""), not null
+#  summary_cn     :string           default(""), not null
 #  summary_en     :string           default(""), not null
 #  unpublished_at :datetime
 #  created_at     :datetime         not null

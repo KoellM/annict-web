@@ -14,6 +14,7 @@
 #  media                        :integer          not null
 #  no_episodes                  :boolean          default(FALSE), not null
 #  official_site_url            :string(510)      default(""), not null
+#  official_site_url_cn         :string           default(""), not null
 #  official_site_url_en         :string           default(""), not null
 #  ratings_count                :integer          default(0), not null
 #  recommended_image_url        :string           default(""), not null
@@ -28,12 +29,15 @@
 #  start_episode_raw_number     :float            default(1.0), not null
 #  started_on                   :date
 #  synopsis                     :text             default(""), not null
+#  synopsis_cn                  :string           default(""), not null
 #  synopsis_en                  :text             default(""), not null
 #  synopsis_source              :string           default(""), not null
+#  synopsis_source_cn           :string           default(""), not null
 #  synopsis_source_en           :string           default(""), not null
 #  title                        :string(510)      not null
 #  title_alter                  :string           default(""), not null
 #  title_alter_en               :string           default(""), not null
+#  title_cn                     :string           default(""), not null
 #  title_en                     :string           default(""), not null
 #  title_kana                   :string           default(""), not null
 #  title_ro                     :string           default(""), not null
@@ -43,6 +47,7 @@
 #  unpublished_at               :datetime
 #  watchers_count               :integer          default(0), not null
 #  wikipedia_url                :string(510)      default(""), not null
+#  wikipedia_url_cn             :string           default(""), not null
 #  wikipedia_url_en             :string           default(""), not null
 #  work_records_count           :integer          default(0), not null
 #  work_records_with_body_count :integer          default(0), not null
@@ -83,7 +88,7 @@ class Work < ApplicationRecord
   include Unpublishable
 
   DIFF_FIELDS = %i[
-    sc_tid title title_kana title_en media official_site_url
+    sc_tid title title_kana title_en title_cn media official_site_url
     official_site_url_en wikipedia_url wikipedia_url_en twitter_username
     twitter_hashtag number_format_id synopsis synopsis_en synopsis_source
     synopsis_source_en mal_anime_id season_year season_name manual_episodes_count
@@ -403,6 +408,7 @@ class Work < ApplicationRecord
 
   def local_title
     return title if I18n.locale == :ja
+    return title_cn if I18n.locale == :"zh-CN" && title_cn.present?
     return title_en if title_en.present?
 
     title

@@ -15,7 +15,7 @@ module HeadHelper
         description: t("head.meta.description._common"),
         site_name: t("noun.annict"),
         image: "#{ENV.fetch("ANNICT_URL")}/images/og_image.png",
-        locale: (I18n.locale == :ja ? "ja_JP" : "en_US")
+        locale: (if I18n.locale == :ja then "ja_JP" elsif I18n.locale == :"zh-CN" then "zh-CN" else "en_US" end)
       },
       fb: {
         app_id: ENV.fetch("FACEBOOK_APP_ID")

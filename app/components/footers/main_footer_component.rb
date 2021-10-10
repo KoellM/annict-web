@@ -93,7 +93,8 @@ module Footers
                   h.tag :ul, class: "d-inline-block list-inline mb-0" do
                     [
                       [view_context.local_url_with_path(locale: :ja), "日本語"],
-                      [view_context.local_url_with_path(locale: :en), "English"]
+                      [view_context.local_url_with_path(locale: :en), "English"],
+                      [view_context.local_url_with_path(locale: :"zh-CN"), "简体中文"]
                     ].each do |link_url, link_title|
                       h.tag :li, class: "list-inline-item" do
                         h.tag :a, href: link_url do

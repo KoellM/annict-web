@@ -8,10 +8,12 @@
 #  aasm_state     :string           default("published"), not null
 #  deleted_at     :datetime
 #  name           :string           not null
+#  name_cn        :string           default(""), not null
 #  name_en        :string           default(""), not null
 #  resource_type  :string           not null
 #  role           :string           not null
 #  role_other     :string
+#  role_other_cn  :string           default(""), not null
 #  role_other_en  :string           default(""), not null
 #  sort_number    :integer          default(0), not null
 #  unpublished_at :datetime
@@ -108,6 +110,11 @@ class Staff < ApplicationRecord
     "#{name_en} (#{resource.name_en})"
   end
 
+  def accurate_name_cn
+    return name_cn if name_cn == resource.name_cn
+    "#{name_cn} (#{resource.name_cn})"
+  end
+
   def local_name_with_old
     return local_name if local_name == resource.local_name
     "#{local_name} (#{resource.local_name})"
@@ -119,6 +126,7 @@ class Staff < ApplicationRecord
   end
 
   def local_role_other
+    return role_other_cn if I18n.locale != :"zh-CN" && role_other_cn.present?
     return role_other_en if I18n.locale != :ja && role_other_en.present?
     role_other
   end

@@ -1,0 +1,292 @@
+zh-CN:
+  messages:
+    _common:
+      are_you_sure: 确定要继续？
+      connected: 已关联
+      created: 已新建
+      deleted: 已删除
+      edit_on_annict_db: 在 Annict DB 上编辑
+      join_annict: 注册
+      post: 已发布
+      published: 已公开
+      search_with_keywords: 搜索作品或人物...
+      share_to_twitter: 分享到Twitter
+      unpublished: 已取消公开
+      updated: 已更新
+      view_amazon_product: 在 Amazon 上查看
+      welcome_back: 欢迎回来！
+      welcome_to_annict: 欢迎来到 Annict！
+      you_can_not_access_there: 无法访问
+    _components:
+      activities:
+        episode_record:
+          created: '记录了'
+          more: '查看剩余的%{n}件记录'
+        status:
+          changed: '更改了状态'
+          more: '查看剩余的%{n}件状态更改'
+        work_record:
+          created: '记录了'
+          more: '查看剩余的%{n}件记录'
+      adsense:
+        hide_ads_html: 成为 <a href="/supporters"> Annict Supporter </a> 后可关闭广告
+      body:
+        view_full_text: 查看全文
+      deprecated_ratings_collapse:
+        hint: 显示了以前记录中的4项评价
+      favorite_button:
+        add_to_favorites: 加入至喜欢
+        added_to_favorites: 已加入
+        hint: '加入至喜欢后、当与 %{resource_type} 相关的新作动画添加到 Annict 时将发送通知 (可以选择不接收通知)'
+      mute_user_button:
+        the_user_has_been_muted: 已静音
+        the_user_has_been_unmuted: 已解除静音
+      program_selector:
+        select_program: 选择节目信息
+      sign_up_modal:
+        body: 注册后可以使用本功能。
+    _empty:
+      no_activities: 暂无动态
+      no_anime: 暂无动画
+      no_characters: 暂无角色
+      no_comments: 暂无感想
+      no_episodes: 暂无章节
+      no_followers: 暂无粉丝
+      no_following: 暂无关注
+      no_organizations: 暂无团体
+      no_people: 暂无人物
+      no_programs: 暂无节目信息
+      no_projects: 暂无项目
+      no_record_body_list: 暂无感想
+      no_records: 暂无记录
+      no_resources: 暂无结果
+      no_series_works: 暂无系列作品
+      no_series: 暂无系列
+      no_slots: 暂无放送预定
+      no_staffs: 暂无 Staff
+      no_works: 暂无作品
+    _page_hints:
+      channel_list_html: 在关注频道后节目信息设置后，%{link}页面将显示节目的播出信息。
+      friend_list_html: '在%{link}页面关联 Twitter 后，将显示关注的 Annict 用户。'
+      home: 关注用户后，时间线上将显示关注用户的动态。
+      notification_list: 在被关注及记录被点赞时，将会发送通知信息。
+      track_html: 正在看的动画。<br>在%{link}页面关注频道后，将显示节目的播出信息。
+    _validators:
+      and_other_are_required: 及%{column_name}为必填
+      is_required_true_or_false: 必须为 `true` 或 `false`
+      is_invalid: 中含有无效的值
+    accounts:
+      email_sent_for_confirmation: 已发送确认邮件
+      saved: 账户已常见
+      updated: 已更新
+    callbacks:
+      sign_in_failed: 登录失败。找不到社交账号的关联用户
+    channels:
+      supported_vod: Annict 支持的动画服务
+    character_fans:
+      no_users: 没有粉丝
+    comments:
+      comment_form_placeholder: 评论记录吧！
+      create: 评论
+      deleted: 已删除
+      saved: 已发布
+      update: 编辑
+      updated: 已更新
+    confirmations:
+      confirmed: 已确认邮箱
+      failure: 确认邮箱失败
+    db:
+      comments:
+        created: 已发布
+      episodes:
+        auto_generate_info_html: '章节数: %{manual_episodes_count}<br>已公开的章节数: %{episodes_count}<br>自动生成的章节数: %{max_generate_episodes_count}'
+      works:
+        no_episodes: 暂无章节
+        no_image: 暂无图片
+        no_release_season: 暂无播出时期
+        no_slots: 暂无放送预定
+    episode_records:
+      created: 已记录
+      new:
+        write_your_comment: 写一些感想吧！
+    episodes:
+      comments: 感想
+      comments_by_others: 大家的感想
+      no_comments: 暂无感想
+      watched_x_times: '看了 %{records_count} 回'
+      your_records: 你的记录
+    favorite_characters:
+      no_characters: 暂无角色
+    favorite_organizations:
+      no_organizations: 暂无团体
+    favorite_people:
+      no_people: 暂无人物
+    forum:
+      _common:
+        view_all_site_news: '查看全部'
+      comments:
+        created: 已发布
+        deleted: 此评论已删除
+        leave_a_comment: 写评论
+        updated: 已更新
+      posts:
+        created: 已发布
+        no_comments: 暂无评论
+        no_posts: 暂无文章
+        updated: 已更新
+    friends:
+      no_sns_friends: 暂无朋友
+      no_users: 暂无用户
+    home:
+      index:
+        there_are_no_activities: 暂无活动
+    ics:
+      you_can_see: 添加以下 URL 到 Google 日历后，状态为在看、想看作品的播出信息将在日期内显示。
+    components:
+      slot_list:
+        tracked: 已记录
+      status_selector:
+        select_status: 观看状态
+    mutes:
+      no_muted_users_found: 暂无静音的用户
+    notifications:
+      no_notifications: 暂无通知
+    oauth:
+      applications:
+        authorize: 通过
+        created: 已创建
+        new: 注册
+        please_input_uris_with_new_line: 请输入一行URI
+        read_only: 只读
+        read_write: 读写
+        you_can_use_the_uri_for_local_application: 本地应用程序也可用urn:ietf:wg:oauth:2.0:oob
+      authorizations:
+        authorize: 通过
+        authorize_account_html: '确认要通过来自 <b>%{client_name}</b> 的访问？'
+        cancel: キャンセル
+        this_application_will_be_able_to: '此应用可以:'
+    oauth_users:
+      new:
+        sign_up_with_oauth: '使用 %{provider_name} 开始'
+    options:
+      hide_supporter_badge: 隐藏 Annict Supporter 的徽章
+      hide_supporter_badge_detail: 将隐藏显示在个人资料页面等处的 Annict Supporter 徽章。
+      prevent_spoiler_of_episode_you_have_not_watched: 防止未记录章节被剧透
+      prevent_spoiler_of_episode_you_have_not_watched_detail: 状态为在看、想看及搁置的动画，将隐藏未观看章节其他用户发布的感想。
+      share_status_to_twitter: 更改状态时分享至Twitter
+      share_status_to_twitter_detail_html: '当更改作品状态时，自动分享至Twitter。<br>内容: 动画「(作品名)」的观看状态更改为「想看」。 (URL)'
+    organization_fans:
+      no_users: 暂无粉丝
+    passwords:
+      new:
+        forgot_your_password: 忘记密码？
+    person_fans:
+      no_users: 暂无粉丝
+    profiles:
+      saved: 已保存
+    slots:
+      new_slots_csv_by_program: 根据播出信息生成放送预定CSV
+      no_slots: 暂无放送预定
+      please_set_channels_html: '请前往%{channels_link}设置频道'
+    providers:
+      removed: 已解除关联
+      you_can_not_disconnect: 无法解除关联
+    recaptcha:
+      not_verified: reCAPTCHA验证失败。请稍后重试
+    records:
+      show:
+        record_by_name: '%{name}的记录'
+      view_record_body: '查看感想'
+    registrations:
+      new:
+        expired_html: 创建账户链接已过期。请在<br><a href="/sign_up">注册</a>页面重试。
+        password_hint: 最低为8个字符。
+        sign_in_link_html: 已经注册了？ %{link}
+        start_with_facebook: 使用 Facebook 登陆
+        start_with_twitter: 使用 Twitter 登陆
+        username_hint: 可以使用半角英文数字和下划线(_)。
+      create:
+        welcome: 注册成功。欢迎来到 Annict！
+    reviews:
+      n_people_changed_status_to_wanna_watch: '%{count}人看了此评论后将状态更改为「想看」了'
+    sayonara:
+      are_you_sure_really: 将无法恢复，确定要继续操作？
+      delete_account: 删除账户
+      description: 账户信息、动画记录、动画状态等与你相关的数据全部将被删除。
+    sessions:
+      new:
+        remember_me: 记住登录状态
+        sign_in_with_facebook: 使用 Facebook 登陆
+        sign_in_with_twitter: 使用 Twitter 登陆
+    settings:
+      apps:
+        disconnected: 关联已解除
+        no_applications: 暂无应用程序
+      email_notifications:
+        updated: 已更新
+        unsubscribed: 已取消订阅
+      tokens:
+        created: 已创建
+        deleted: 已删除
+        updated: 已更新
+        make_sure_to_copy: 请复制个人令牌。此字符串将无法重新显示。
+        new: 新建
+        no_tokens: 暂未创建
+    sign_in:
+      create:
+        mail_has_sent: 已发送登录链接
+      new:
+        description_html: 将向输入的邮箱地址发送登录链接。
+        sign_up_link_html: 还没有注册？ %{link}
+    sign_in_callback:
+      show:
+        expired_html: 登录链接已过期。<br>请重新登录。
+        signed_in: 已登录
+    sign_up:
+      create:
+        mail_has_sent: 已发送注册链接
+      new:
+        description_html: 将向输入的邮箱地址发送注册链接。
+    tracks:
+      episodes_you_have_watched: 已观看章节
+      no_trackable_episodes: 暂无未观看章节
+      see_records: 查看记录
+      tracked: 已记录
+    userland:
+      description_html: "Userland 是为了展示由志愿者制作为了更加方便使用 Annict 而开发的应用。使用了 <a href='https://developers.annict.jp' target='_blank'>Annict API</a> 做了些什么的用户们，可以的话请点击「新建项目」。"
+      description_mobile_html: 'Userland 是为了展示由志愿者制作为了更加方便使用 Annict 而开发的应用。'
+      projects:
+        about_available: 勾选此项后，项目将公开其他用户使用。
+        markdown_support: 支持 Markdown。
+      welcome: 欢迎来到 Userland！
+    user_email_callbacks:
+      show:
+        expired: 确认链接已过期。请重试
+        updated: 邮箱已更新
+    users:
+      _validators:
+        exists_active_oauth_applications: 已存在，无法退会。
+      allowed_locales_description: '您可以选择由哪种语言发布的文字（感想和评论等）显示。'
+      bye_bye: '已退回。(´・ω;:..'
+      no_works: 暂无作品
+    welcome:
+      show:
+        annict_features: Annict 可以
+        hero_description_html:  Annict (アニクト)是一个可以轻松记录动画的站点。<br>在这里记下看到了哪一集、从朋友的观看记录里探索、管理您的动画。
+        hero_description_mobile_html: Annict (アニクト)是一个可以轻松记录动画的站点。
+        hero_title_html: <span class="fw-bold">记下</span>看到的一切，一起<br class="d-sm-none"><span class="fw-bold">探索</span>动画吧。
+        lets_start_tracking: 现在就开始记录吧
+    work_records:
+      new:
+        write_your_comment: 写一些感想吧！
+    work_images:
+      attach_image: 选择图标...
+      deleted: 已删除
+      saved: 已保存
+    works:
+      view_all_n_characters: '查看全部%{n}角色'
+      view_all_n_episodes: '查看全部%{n}章节'
+      view_all_n_record_body_list: '查看全部%{n}件感想'
+      view_all_n_staffs: '查看全部%{n}人 Staff'
+      creating_episodes_restricted_episodes_filled: '由于已达到章节总数，无法继续创建。'
+      creating_episodes_restricted_slots_exists: '由于已登记为放送预定，无法手动添加章节。将使用放送预定信息自动生成章节。'

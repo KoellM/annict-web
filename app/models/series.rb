@@ -9,7 +9,9 @@
 #  deleted_at         :datetime
 #  name               :string           not null
 #  name_alter         :string           default(""), not null
+#  name_alter_cn      :string           default(""), not null
 #  name_alter_en      :string           default(""), not null
+#  name_cn            :string           default(""), not null
 #  name_en            :string           default(""), not null
 #  name_ro            :string           default(""), not null
 #  series_works_count :integer          default(0), not null

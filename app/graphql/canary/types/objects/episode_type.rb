@@ -17,6 +17,7 @@ module Canary
         field :sort_number, Integer, null: false
         field :title, String, null: true
         field :title_en, String, null: true
+        field :title_cn, String, null: true
         field :satisfaction_rate, Float,
           null: true,
           description: "満足度"

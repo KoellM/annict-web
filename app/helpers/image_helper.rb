@@ -29,6 +29,7 @@ module ImageHelper
     if options[:blur]
       ix_options[:blur] = options[:blur]
     end
+    return "#{ENV.fetch("ANNICT_API_ASSETS_URL")}/images/#{path}"
 
     ix_image_url(path, ix_options)
   end
@@ -84,6 +85,9 @@ module ImageHelper
   def ann_image_url(record, field, width:, height:, format: "jpg")
     path = record ? record.uploaded_file_path(field) : "no-image.jpg"
     fit = width == height ? "crop" : "fill"
+
+    # TODO
+    return "#{ENV.fetch("ANNICT_API_ASSETS_URL")}/images/#{path}"
 
     ix_image_url(path, {
       fill: "solid",

@@ -68,9 +68,9 @@ module Db
 
     def person_params
       params.require(:person).permit(
-        :name, :name_kana, :name_en, :nickname, :nickname_en, :gender,
+        :name, :name_kana, :name_en, :name_cn, :nickname, :nickname_en, :nickname_cn, :gender,
         :blood_type, :prefecture_id, :birthday, :height, :url, :url_en,
-        :wikipedia_url, :wikipedia_url_en, :twitter_username, :twitter_username_en
+        :wikipedia_url, :wikipedia_url_en, :wikipedia_url_cn, :twitter_username, :twitter_username_en, :twitter_username_cn
       )
     end
   end

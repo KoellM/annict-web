@@ -6,6 +6,7 @@
 #
 #  id                      :bigint           not null, primary key
 #  name                    :string           not null
+#  name_cn                 :string           default(""), not null
 #  name_en                 :string           not null
 #  sort_number             :integer          default(0), not null
 #  userland_projects_count :integer          default(0), not null

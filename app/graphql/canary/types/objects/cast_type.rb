@@ -27,6 +27,10 @@ module Canary
           null: false,
           description: "出演者名 (英)。出演当時と名前が異なる場合新旧2つの名前を併記する。例: Nagashima, Yuuichi (Cho)"
 
+          field :accurate_name_cn, String,
+          null: false,
+          description: "出演者名 (中国語)。出演当時と名前が異なる場合新旧2つの名前を併記する。例: Nagashima, Yuuichi (Cho)"
+
         field :sort_number, Integer,
           null: false,
           description: "ソート番号"
@@ -46,6 +50,10 @@ module Canary
 
         def accurate_name_en
           object.decorate.accurate_name_en
+        end
+
+        def accurate_name_cn
+          object.decorate.accurate_name_cn
         end
 
         def work

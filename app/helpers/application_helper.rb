@@ -30,7 +30,13 @@ module ApplicationHelper
   end
 
   def twitter_username
-    I18n.locale == :ja ? "@AnnictJP" : "@anannict"
+    if I18n.locale == :ja
+      "@AnnictJP"
+    elsif I18n.locale == :"zh-CN"
+      "@anannict"
+    else
+      "@anannict"
+    end
   end
 
   def skeleton_loader_content(size:, class_name: "")
@@ -39,8 +45,15 @@ module ApplicationHelper
   end
 
   def annict_config
+    if locale == :ja
+      config_locale = ENV.fetch("ANNICT_DOMAIN")
+    elsif locale == "zh-CN"
+      config_locale = ENV.fetch("ANNICT_CN_DOMAIN")
+    else
+      config_locale = ENV.fetch("ANNICT_EN_DOMAIN")
+    end
     config = {
-      domain: locale == :ja ? ENV.fetch("ANNICT_DOMAIN") : ENV.fetch("ANNICT_EN_DOMAIN"),
+      domain: config_locale,
       flash: {
         type: flash.keys.first,
         message: flash[flash.keys.first]

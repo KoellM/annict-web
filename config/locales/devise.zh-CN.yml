@@ -1,0 +1,24 @@
+zh-CN:
+  devise:
+    failure:
+      already_authenticated: '已验证'
+      user:
+        invalid: 无法登录
+        not_found_in_database: 未找到用户
+        unauthenticated: 请登录后继续
+        unconfirmed: 由于邮箱还未确认，无法继续操作。
+    mailer:
+      reset_password_instructions:
+        subject: 重置密码 - Annict
+    omniauth_callbacks:
+      user:
+        failure: 无法通过验证，请稍后重置。
+    passwords:
+      user:
+        send_instructions: 已发送重置密码邮件。
+        updated: 密码已更改。
+    sessions:
+      user:
+        already_signed_out: 已登录。
+        signed_in: 登录成功
+        signed_out: 退出成功

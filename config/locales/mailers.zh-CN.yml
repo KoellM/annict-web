@@ -1,0 +1,11 @@
+zh-CN:
+  email_confirmation_mailer:
+    sign_in_confirmation:
+      subject: 登录 Annict
+    sign_up_confirmation:
+      subject: 创建 Annict 账户
+    update_email_confirmation:
+      subject: 更换 Annict 账户的邮箱
+  forum_mailer:
+    comment_notification:
+      subject: "[Annict Forum] %{name} (@%{username}) 评论了「%{post_title}」"

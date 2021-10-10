@@ -1,0 +1,88 @@
+zh-CN:
+  enumerize:
+    episode_record:
+      rating_state:
+        average: 普通
+        bad: 不好
+        good: 好
+        great: 非常好
+    person:
+      blood_type:
+        a: A型
+        b: B型
+        ab: AB型
+        o: O型
+      gender:
+        female: 女性
+        male: 男性
+    setting:
+      slots_sort_type:
+        started_at_asc: 以最新播放
+        started_at_desc: 以最早播放
+      records_sort_type:
+        likes_count_desc: 以最多点赞
+        rating_state_desc: 以评价最高
+        rating_state_asc: 以评价最低
+        created_at_desc: 以最新投稿
+        created_at_asc: 以最早投稿
+    staff:
+      role:
+        animation_director: 作画监督
+        art_director: 美术监督
+        character_design: 人物设定
+        chief_animation_director: 总作画监督
+        chief_director: 总导演
+        director: 导演
+        music: 音乐
+        original_character_design: 人物原案
+        original_creator: 原作
+        other: 其他
+        script: 脚本
+        series_composition: 系列构成
+        sound_director: 音响监督
+        studio: 动画制作
+    status:
+      kind:
+        wanna_watch: 想看
+        watching: 在看
+        watched: 看过
+        on_hold: 搁置
+        stop_watching: 抛弃
+      kind_v3:
+        plan_to_watch: 想看
+        watching: 在看
+        completed: 看过
+        on_hold: 搁置
+        dropped: 抛弃
+      kind_action:
+        wanna_watch: 想看
+        watching: 在看
+        watched: 看过
+        on_hold: 搁置
+        stop_watching: 抛弃
+    program:
+      locale:
+        en: 英语
+        ja: 日语
+        zh-CN: 简体中文
+    user:
+      allowed_locales:
+        en: 英语
+        ja: 日语
+        zh-CN: 简体中文
+        other: 其他
+      role:
+        admin: 管理员
+        editor: 编辑
+    work:
+      media:
+        tv: TV
+        ova: OVA
+        movie: 剧场版
+        web: Web
+        other: 其他
+      season_name:
+        winter: 冬
+        spring: 春
+        summer: 夏
+        autumn: 秋

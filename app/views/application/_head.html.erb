@@ -29,6 +29,7 @@
 <link rel="canonical" href="<%= "#{request.protocol}#{request.host_with_port}#{request.path}" %>">
 <link rel="alternate" hreflang="ja" href="<%= "#{ENV.fetch('ANNICT_URL')}#{request.path}" %>">
 <link rel="alternate" hreflang="en" href="<%= "#{ENV.fetch('ANNICT_EN_URL')}#{request.path}" %>">
+<link rel="alternate" hreflang="zh-CN" href="<%= "#{ENV.fetch('ANNICT_CN_URL')}#{request.path}" %>">
 <link rel="alternate" hreflang="x-default" href="<%= "#{ENV.fetch('ANNICT_URL')}#{request.path}" %>">
 
 <%= annict_config %>
@@ -37,3 +38,10 @@
 <script data-mutate-approach="sync" crossorigin="anonymous" src="https://kit.fontawesome.com/0099029c12.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 <%= yield :head_assets %>
+<% if I18n.locale == :"zh-CN" %>
+  <style>
+    html, body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, div, a, span {
+      font-family: 'SF Pro SC','SF Pro Display','PingFang SC','Lucida Grande','Helvetica Neue',Helvetica,Arial,Verdana,sans-serif,"Hiragino Sans GB";
+    }
+  </style>
+<% end %>

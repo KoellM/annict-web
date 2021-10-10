@@ -63,7 +63,7 @@ module Db
     private
 
     def series_params
-      params.require(:series).permit(:name, :name_alter, :name_alter_en, :name_en)
+      params.require(:series).permit(:name, :name_alter, :name_alter_en, :name_en, :name_alter_cn, :name_cn)
     end
   end
 end

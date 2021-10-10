@@ -23,7 +23,13 @@ module ResourceImageDecoratorCommon
     private
 
     def amazon_url
-      amazon_url_key = I18n.locale == :ja ? "AMAZON_JA_URL" : "AMAZON_EN_URL"
+      amazon_url_key = if I18n.locale == :ja
+        "AMAZON_JA_URL"
+      elsif I18n.locale == :"zh-CN"
+        "AMAZON_JA_URL"
+      else
+        "AMAZON_EN_URL"
+      end
       "#{ENV.fetch(amazon_url_key)}/dp/#{asin}"
     end
   end

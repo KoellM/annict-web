@@ -1,0 +1,277 @@
+zh-CN:
+  activerecord:
+    attributes:
+      cast:
+        character_id: キャラクター
+        name_en: 角色名 (英语)
+        name: 角色名
+        person_id: 演员
+        sort_number: 排序编号
+        work_id: 动画
+      channel:
+        channel_group: 频道分组
+        channel_group_id: 频道分组
+        name: 频道名称
+        sort_number: 排序编号
+      channel_group:
+        name: 分组名称
+        sort_number: 排序编号
+      character:
+        state: 状态
+        age_en: 年龄 (英语)
+        age: 年龄
+        birthday_en: 生日 (英语)
+        birthday: 生日
+        blood_type_en: 血型 (英语)
+        blood_type: 血型
+        description_en: 角色介绍 (英语)
+        description_source_en: 角色介绍来源 (英语)
+        description_source: 角色介绍来源
+        description: 角色介绍
+        height_en: 身高 (英语)
+        height: 身高
+        name_en: 名字 (英语)
+        name_kana: 名字 (假名)
+        name: 名字
+        nationality_en: 国籍 (英语)
+        nationality: 国籍
+        nickname_en: 昵称 (英语)
+        nickname: 昵称
+        occupation_en: 职业 (英语)
+        occupation: 职业
+        series: 系列
+        series_id: 系列
+        weight_en: 体重 (英语)
+        weight: 体重
+      comment:
+        body: 评论
+      doorkeeper/application:
+        name: 应用名称
+        redirect_uri: 重定向 URI
+        scopes: 范围
+      email_notification:
+        event_followed_user: 被关注时发送邮件通知我
+        event_liked_episode_record: 发表的评论被点赞时发送邮件通知我
+        event_favorite_works_added: 关注的人物有作品新动态时发送邮件通知我
+        event_related_works_added: 看过的作品有相关的新动态时发送邮件通知我
+      episode:
+        records_count: 记录数
+        fetch_syobocal: 与しょぼかる(Syobocal)同步
+        number: 章节
+        prev_episode_id: 上一章节
+        raw_number: 章节 (Raw)
+        sc_count: しょぼかる(Syobocal)编号
+        sort_number: 排序编号
+        title: 标题
+        title_en: 英文标题
+      episode_record:
+        body: 感想
+        rating_state: 评分
+        mutation_error: ''
+      forum_comment:
+        body: 内容
+      forum_post:
+        body: 内容
+        title: 标题
+        forum_category: 分类
+        forum_category_id: 分类
+        forum_comments_count: 评论数
+        last_commented_at: 最新评论
+      oauth_application:
+        redirect_uri: 重定向 URI
+        scope: 范围
+        secret: Client Secret
+        uid: Client ID
+      organization:
+        state: 状态
+        name_en: 名字 (英语)
+        name_kana: 名字 (假名)
+        name: 名字
+        twitter_username_en: Twitter (英语)
+        twitter_username: Twitter
+        url_en: URL (英语)
+        url: URL
+        wikipedia_url_en: Wikipedia (英语)
+        wikipedia_url: Wikipedia
+      person:
+        state: 状态
+        birthday: 生日
+        blood_type_en: 血型 (英语)
+        blood_type: 血型
+        gender_en: 性别 (英语)
+        gender: 性别
+        height: 身高
+        name_en: 名字 (英语)
+        name_kana: 名字 (假名)
+        name: 名字
+        nickname_en: 昵称 (英语)
+        nickname: 昵称
+        prefecture_id: 出身地
+        twitter_username_en: Twitter (英语)
+        twitter_username: Twitter
+        url_en: URL (英语)
+        url: URL
+        wikipedia_url_en: Wikipedia (英语)
+        wikipedia_url: Wikipedia
+      profile:
+        avatar: 个人资料图片
+        background_image: 背景图片
+        description: 介绍
+        name: 名字
+        url: URL
+      slot:
+        channel_id: 频道
+        episode_id: 章节
+        irregular: 异常次数
+        number: 章节数
+        program_id: 放送信息
+        rebroadcast: 再放送
+        shift_time_along_with_after_slots: 此后的放送时间也将发生变化。
+        started_at: 放送时间
+        time_zone: 时区
+      program:
+        channel_id: 频道
+        minimum_episode_generatable_number: 可生成章节最低数
+        rebroadcast: 再放送
+        started_at: 放送开始时间
+        time_zone: 时区
+        url: URL
+        vod_title_code: VOD作品编号
+        vod_title_name: VOD作品名称
+      trailer:
+        sort_number: 排序编号
+        title: 标题
+        thumbnail: 缩略图
+        url: URL
+      series:
+        name: 系列名
+        name_alter: 别名
+        name_alter_en: 別名 (英语)
+        name_en: 系列名 (英语)
+      series_work:
+        summary: 相关性
+        summary_en: 相关性 (英语)
+        work_id: 动画
+      staff:
+        name_en: 名字 (英语)
+        name: 名字
+        resource_id: 个人或团体
+        role_other_en: 职务 (其他/英语)
+        role_other: 职务 (其他)
+        role: 职务
+        sort_number: 排序编号
+        work_id: 动画
+      userland_project:
+        available: 可用？
+        description: 详细介绍
+        icon: 图标
+        name: 应用名称
+        summary: 简介
+        url: URL
+        userland_category_id: 分类
+      user:
+        allowed_locales: 显示语言
+        current_password: 当前密码
+        email_username: 电子邮箱或用户名
+        email: 邮箱
+        locale: 语言
+        oauth_applications: OAuth 应用程序
+        password: 密码
+        password_confirmation: 确认密码
+        terms_and_privacy_policy_agreement: 服务条款及隐私政策
+        terms_and_privacy_policy_agreement_html: "我同意<a href='/terms' target='_blank'>服务条款</a>及<a href='/privacy' target='_blank'>隐私政策</a>"
+        terms: 服务条款及隐私政策
+        time_zone: 时区
+        username: 用户名
+      vod_title:
+        code: 作品编号
+        created_at: 创建时间
+        name: 作品名
+      work:
+        ended_on: 结束日期
+        mal_anime_id: MAL Anime ID
+        manual_episodes_count: 章节数
+        media: 媒体
+        no_episodes: 无章节
+        number_format_id: 章节格式
+        official_site_url_en: 英文官方网站
+        official_site_url: 官方网站
+        sc_tid: Syobocal ID
+        season_id: 播出时期
+        season: 播出时期
+        season_name: 播出时期
+        season_year: 播出年份
+        start_episode_raw_number: 开始章节数
+        started_on: 开始日期
+        synopsis_en: 英文介绍
+        synopsis_source_en: 英文介绍来源
+        synopsis_source: 介绍来源
+        synopsis: 介绍
+        title_alter: 別名
+        title_alter_en: 英文別名
+        title_en: 英文标题
+        title_kana: 假名
+        title: 标题
+        twitter_hashtag: Twitter hashtag
+        twitter_username: 官方Twitter
+        wikipedia_url_en: 英文 Wikipedia
+        wikipedia_url: Wikipedia
+      work_image:
+        attachment: 动画图片
+        copyright: 版权信息
+      work_organization:
+        organization_id: 团体
+        work_id: 动画
+        role: 职位
+        role_other: 职位 (其他)
+        sort_number: 排序编号
+      work_record:
+        title: 标题
+        body: 感想
+        mutation_error: ''
+        rating_animation_state: 视频
+        rating_music_state: 音乐
+        rating_story_state: 故事
+        rating_character_state: 角色
+        rating_overall_state: 整体
+    errors:
+      messages:
+        accepted: 需要同意
+        url: 需要填写
+    models:
+      character:
+        one: 角色
+        other: 角色
+      cast:
+        one: 演员
+        other: 演员
+      db_activity:
+        one: 活动
+        other: 活动
+      episode:
+        one: 章节
+        other: 章节
+      organization:
+        one: 团体
+        other: 团体
+      person:
+        one: 人物
+        other: 人物
+      slot:
+        one: 放送预定
+        other: 放送预定
+      trailer:
+        one: PV
+        other: PV
+      series:
+        one: 系列
+        other: 系列
+      series_work:
+        one: 系列动画
+        other: 系列动画
+      staff:
+        one: Staff
+        other: Staff
+      anime:
+        one: 动画
+        other: 动画

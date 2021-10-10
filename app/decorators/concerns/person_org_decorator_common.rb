@@ -6,6 +6,7 @@ module PersonOrgDecoratorCommon
   included do
     def local_name
       return name if I18n.locale == :ja
+      return name_cn if I18n.locale == :"zh-CN" && name_cn.present?
       return name_en if name_en.present?
       name
     end
@@ -13,6 +14,9 @@ module PersonOrgDecoratorCommon
     def local_other_name
       if I18n.locale == :ja
         name_kana.presence || ""
+      elsif I18n.locale == :"zh-CN"
+        return name_kana if name_cn.blank?
+        name
       else
         return name_kana if name_en.blank?
         name

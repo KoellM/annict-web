@@ -12,6 +12,7 @@ module Canary
         field :url, String, null: false
         field :title, String, null: false
         field :title_en, String, null: false
+        field :title_cn, String, null: false
         field :sort_number, Integer, null: false
         field :is_youtube, Boolean, null: false
         field :work, Canary::Types::Objects::WorkType, null: false

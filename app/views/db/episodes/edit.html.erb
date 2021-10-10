@@ -48,6 +48,11 @@
             </div>
 
             <div class="mb-3">
+              <%= f.label :title_cn %>
+              <%= f.text_field :title_cn, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
               <%= f.label :prev_episode_id %>
               <%= f.select(
                 :prev_episode_id,
