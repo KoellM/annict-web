@@ -85,7 +85,6 @@ module ImageHelper
     path = record ? record.uploaded_file_path(field) : "no-image.jpg"
     fit = width == height ? "crop" : "fill"
 
-
     ix_image_url(path, {
       fill: "solid",
       fit: fit,
