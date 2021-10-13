@@ -28,6 +28,9 @@ h1.h2.fw-bold
     - if person.name_en.present?
       dt.small = t "activerecord.attributes.person.name_en"
       dd = person.name_en
+    - if person.name_cn.present?
+      dt.small = t "activerecord.attributes.person.name_cn"
+      dd = person.name_cn
     - if person.nickname.present?
       dt.small = t "activerecord.attributes.person.nickname"
       dd = person.nickname

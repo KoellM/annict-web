@@ -12,6 +12,7 @@ module Beta
         field :name, String, null: false
         field :name_ro, String, null: false
         field :name_en, String, null: false
+        field :name_cn, String, null: false
 
         field :works, Beta::Connections::SeriesWorkConnection, null: true, connection: true do
           argument :order_by, Beta::Types::InputObjects::SeriesWorkOrder, required: false

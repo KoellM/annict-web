@@ -27,6 +27,8 @@
           <%= person.name_kana.presence || "-" %>
           <br>
           <%= person.name_en.presence || "-" %>
+          <br>
+          <%= person.name_cn.presence || "-" %>
         </td>
         <td>
           <%= render Db::PublishingStateLabelComponent.new(resource: person) %>

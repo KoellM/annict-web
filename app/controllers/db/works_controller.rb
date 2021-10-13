@@ -76,10 +76,10 @@ module Db
 
     def work_params
       params.require(:work).permit(
-        :title, :title_kana, :title_alter, :title_en, :title_cn, :title_alter_en, :media, :official_site_url,
-        :official_site_url_en, :wikipedia_url, :wikipedia_url_en, :twitter_username,
+        :title, :title_kana, :title_alter, :title_en, :title_cn, :title_alter_en, :title_alter_cn,  :media, :official_site_url,
+        :official_site_url_en, :official_site_url_cn, :wikipedia_url, :wikipedia_url_en, :wikipedia_url_cn, :twitter_username,
         :twitter_hashtag, :sc_tid, :mal_anime_id, :number_format_id, :synopsis,
-        :synopsis_source, :synopsis_en, :synopsis_source_en, :season_year, :season_name,
+        :synopsis_source, :synopsis_en, :synopsis_source_en, :synopsis_cn, :synopsis_source_cn, :season_year, :season_name,
         :manual_episodes_count, :start_episode_raw_number, :no_episodes, :started_on, :ended_on
       )
     end

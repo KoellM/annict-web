@@ -4,6 +4,7 @@ ja:
       cast:
         character_id: 角色
         name_en: 
+        name_cn: 名義 (中国語)
         name: 名義
         person_id: 演员
         sort_number: ソート番号
@@ -26,16 +27,20 @@ ja:
         blood_type: 血液型
         description_en: キャラ紹介 (英語)
         description_source_en: キャラ紹介の引用元 (英語)
+        description_cn: キャラ紹介 (中国語)
+        description_source_cn: キャラ紹介の引用元 (中国語)
         description_source: キャラ紹介の引用元
         description: キャラ紹介
         height_en: 身長 (英語)
         height: 身長
         name_en: 名前 (英語)
+        name_cn: 名前 (中国語)
         name_kana: 名前 (かな)
         name: 名前
         nationality_en: 国籍 (英語)
         nationality: 国籍
         nickname_en: ニックネーム (英語)
+        nickname_cn: ニックネーム (中国語)
         nickname: ニックネーム
         occupation_en: 肩書き (英語)
         occupation: 肩書き
@@ -63,6 +68,7 @@ ja:
         sc_count: しょぼかる番号
         sort_number: ソート番号
         title: タイトル
+        title_cn: "タイトル (中国語)"
         title_en: タイトル (英)
       episode_record:
         body: 感想
@@ -85,9 +91,11 @@ ja:
       organization:
         state: 状態
         name_en: 名前 (英語)
+        name_cn: 名前 (中国語)
         name_kana: 名前 (かな)
         name: 名前
         twitter_username_en: Twitter (英語)
+        twitter_username_cn: Twitter (中国語)
         twitter_username: Twitter
         url_en: URL (英語)
         url: URL
@@ -102,12 +110,15 @@ ja:
         gender: 性別
         height: 身長
         name_en: 名前 (英語)
+        name_cn: 名前 (中国語)
         name_kana: 名前 (かな)
         name: 名前
         nickname_en: ニックネーム (英語)
+        nickname_cn: ニックネーム (中国語)
         nickname: ニックネーム
         prefecture_id: 出身地
         twitter_username_en: Twitter (英語)
+        twitter_username_cn: Twitter (中国語)
         twitter_username: Twitter
         url_en: URL (英語)
         url: URL
@@ -148,12 +159,14 @@ ja:
         name_alter: 別名
         name_alter_en: 別名 (英語)
         name_en: 名前 (英語)
+        name_cn: 名前 (中国語)
       series_work:
         summary: 関係性
         summary_en: 関係性 (英語)
         work_id: アニメ
       staff:
         name_en: 名義 (英語)
+        name_cn: 名義 (中国語)
         name: 名義
         resource_id: 人物または団体
         role_other_en: 担当 (その他/英語)
@@ -205,10 +218,13 @@ ja:
         started_on: 開始日
         synopsis_en: あらすじ (英)
         synopsis_source_en: あらすじの引用元 (英)
+        synopsis_cn: あらすじ (中国語)
+        synopsis_source_cn: あらすじの引用元 (中国語)
         synopsis_source: あらすじの引用元
         synopsis: あらすじ
         title_alter: タイトルの別名
         title_alter_en: タイトルの別名 (英語)
+        title_cn: タイトル (中国語)
         title_en: タイトル (英)
         title_kana: タイトル (かな)
         title: タイトル

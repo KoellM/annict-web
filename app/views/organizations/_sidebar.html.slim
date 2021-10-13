@@ -24,6 +24,9 @@ h1.h2.fw-bold
     - if organization.name_en.present?
       dt.small = t "activerecord.attributes.organization.name_en"
       dd = organization.name_en
+    - if organization.name_cn.present?
+      dt.small = t "activerecord.attributes.organization.name_cn"
+      dd = organization.name_cn
     - if organization.url.present?
       dt.small = t "noun.official_site"
       dd = link_with_domain organization.url

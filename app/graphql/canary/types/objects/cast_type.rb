@@ -19,6 +19,10 @@ module Canary
           null: false,
           description: "出演者名 (英語)"
 
+        field :name_cn, String,
+          null: false,
+          description: "出演者名 (中国語)"
+
         field :accurate_name, String,
           null: false,
           description: "出演者名。出演当時と名前が異なる場合新旧2つの名前を併記する。例: 長島雄一 (チョー)"

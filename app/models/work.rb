@@ -89,9 +89,9 @@ class Work < ApplicationRecord
 
   DIFF_FIELDS = %i[
     sc_tid title title_kana title_en title_cn media official_site_url
-    official_site_url_en wikipedia_url wikipedia_url_en twitter_username
-    twitter_hashtag number_format_id synopsis synopsis_en synopsis_source
-    synopsis_source_en mal_anime_id season_year season_name manual_episodes_count
+    official_site_url_en official_site_url_cn wikipedia_url wikipedia_url_en wikipedia_url_cn twitter_username
+    twitter_hashtag number_format_id synopsis synopsis_en synopsis_cn synopsis_source
+    synopsis_source_en synopsis_source_cn mal_anime_id season_year season_name manual_episodes_count
     started_on ended_on
   ].freeze
 
@@ -132,12 +132,15 @@ class Work < ApplicationRecord
 
   validates :media, presence: true
   validates :official_site_url_en, url: {allow_blank: true}
+  validates :official_site_url_cn, url: {allow_blank: true}
   validates :official_site_url, url: {allow_blank: true}
   validates :sc_tid, numericality: {only_integer: true}, allow_blank: true
   validates :synopsis_en, presence_pair: :synopsis_source_en
+  validates :synopsis_cn, presence_pair: :synopsis_source_cn
   validates :synopsis, presence_pair: :synopsis_source
   validates :title, presence: true, uniqueness: {conditions: -> { only_kept }}
   validates :wikipedia_url_en, url: {allow_blank: true}
+  validates :wikipedia_url_cn, url: {allow_blank: true}
   validates :wikipedia_url, url: {allow_blank: true}
 
   scope(:by_season, ->(season_slug) {

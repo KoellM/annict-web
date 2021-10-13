@@ -68,6 +68,8 @@
                     <%= link_to cast.character.name, db_edit_character_path(cast.character) %>
                     <br>
                     <%= cast.character.name_en.presence || "-" %>
+                    <br>
+                    <%= cast.character.name_cn.presence || "-" %>
                     <% if cast.character.series %>
                       <br>
                       <%= link_to db_edit_series_path(cast.character.series), class: "small" do %>
@@ -82,11 +84,15 @@
                   <%= link_to cast.person.name, db_edit_person_path(cast.person) %>
                   <br>
                   <%= cast.person.name_en.presence || "-" %>
+                  <br>
+                  <%= cast.person.name_cn.presence || "-" %>
                 </td>
                 <td>
                     <%= cast.name %>
                     <br>
                     <%= cast.name_en.presence || "-" %>
+                    <br>
+                    <%= cast.name_cn.presence || "-" %>
                 </td>
                 <td>
                   <%= cast.sort_number %>

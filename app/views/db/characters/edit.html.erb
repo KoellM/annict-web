@@ -40,6 +40,11 @@
             </div>
 
             <div class="mb-3">
+              <%= f.label :name_cn %>
+              <%= f.text_field :name_cn, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
               <%= f.label :nickname %>
               <%= f.text_field :nickname, class: "form-control" %>
             </div>
@@ -47,6 +52,11 @@
             <div class="mb-3">
               <%= f.label :nickname_en %>
               <%= f.text_field :nickname_en, class: "form-control" %>
+            </div>
+            
+            <div class="mb-3">
+              <%= f.label :nickname_cn %>
+              <%= f.text_field :nickname_cn, class: "form-control" %>
             </div>
 
             <div class="mb-3">
@@ -155,6 +165,16 @@
             <div class="mb-3">
               <%= f.label :description_source_en %>
               <%= f.text_field :description_source_en, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :description_cn %>
+              <%= f.text_area :description_cn, class: "form-control", rows: 10 %>
+            </div>
+
+            <div class="mb-3">
+              <%= f.label :description_source_cn %>
+              <%= f.text_field :description_source_cn, class: "form-control" %>
             </div>
 
             <%= f.submit t("helpers.submit.update"), class: "btn btn-primary" %>

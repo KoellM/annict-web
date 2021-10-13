@@ -15,7 +15,7 @@ module Db
     private
 
     def attrs_list
-      roles = %i[ja en]
+      roles = %i[ja en zh-CN]
         .map { |l| I18n.t("enumerize.staff.role", locale: l).invert }
         .inject(&:merge)
 

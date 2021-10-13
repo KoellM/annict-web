@@ -198,6 +198,16 @@
   </div>
 
   <div class="mb-3">
+    <%= f.label :synopsis_cn %>
+    <%= f.text_area :synopsis_cn, class: "form-control", rows: 10 %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :synopsis_source_cn %>
+    <%= f.text_field :synopsis_source_cn, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
     <%= f.label :manual_episodes_count %>
     <%= f.text_field :manual_episodes_count, class: "form-control" %>
   </div>

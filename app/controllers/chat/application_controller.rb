@@ -5,6 +5,6 @@ module Chat
     include ControllerCommon
     include Localizable
 
-    helper_method :locale_ja?, :locale_en?, :local_url
+    helper_method :locale_ja?, :locale_en?, :locale_zh_cn?, :local_url
   end
 end

@@ -4,8 +4,8 @@ zh-CN:
       unsubscribe: "退订"
       unsubscribe_message: "您收到这封邮件说明您是Annict的用户。"
     favorite_works_added:
-      favorites_joins_work: "将此动画相关加入至喜欢列表"
-      subject: "你喜欢的相关作品%{n}已加入Annict！"
+      favorites_joins_work: "将此动画相关加入至收藏列表"
+      subject: "你收藏的相关作品%{n}已加入Annict！"
       view_detail: "查看相关"
     followed_user:
       followed_you: "%{name} (@%{username})已关注您。"

@@ -24,6 +24,9 @@ h1.h2.fw-bold
     - if character.name_en.present?
       dt.small = t "activerecord.attributes.character.name_en"
       dd = character.name_en
+    - if character.name_cn.present?
+      dt.small = t "activerecord.attributes.character.name_cn"
+      dd = character.name_cn
     - if character.local_nickname.present?
       dt.small = t "activerecord.attributes.character.nickname"
       dd = character.local_nickname

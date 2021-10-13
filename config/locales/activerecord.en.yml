@@ -5,6 +5,7 @@ en:
         character_id: Character
         name_en: Name (en)
         name: Name
+        name_cn: Name (cn)
         person_id: Person
         sort_number: Sort number
         work_id: Work
@@ -26,17 +27,21 @@ en:
         blood_type: Blood type
         description_en: Description (en)
         description_source_en: Description source (en)
+        description_cn: Description (cn)
+        description_source_cn: Description source (cn)
         description_source: Description source
         description: Description
         height_en: Height (en)
         height: Height
         kind: Kind
         name_en: Name (en)
+        name_cn: Name (cn)
         name_kana: Name (kana)
         name: Name
         nationality_en: Nationality (en)
         nationality: Nationality
         nickname_en: Nickname (en)
+        nickname_cn: Nickname (cn)
         nickname: Nickname
         occupation_en: Occupation (en)
         occupation: Occupation
@@ -64,6 +69,7 @@ en:
         sc_count: Syobocal number
         sort_number: Sort number
         title: Title
+        title_cn: Title (cn)
         title_en: Title (en)
       episode_record:
         body: Comment
@@ -86,9 +92,11 @@ en:
       organization:
         state: State
         name_en: Name (en)
+        name_cn: Name (cn)
         name_kana: Name (kana)
         name: Name
         twitter_username_en: Twitter (en)
+        twitter_username_cn: Twitter (cn)
         twitter_username: Twitter
         url_en: URL (en)
         url: URL
@@ -103,12 +111,15 @@ en:
         gender: Gender
         height: Height
         name_en: Name (en)
+        name_cn: Name (cn)
         name_kana: Name (kana)
         name: Name
         nickname_en: Nickname (en)
+        nickname_en: Nickname (cn)
         nickname: Nickname
         prefecture_id: Prefecture
         twitter_username_en: Twitter (en)
+        twitter_username_cn: Twitter (cn)
         twitter_username: Twitter
         url_en: URL (en)
         url: URL
@@ -148,13 +159,16 @@ en:
         name: Name
         name_alter: Name (alter)
         name_alter_en: Name (alter/en)
+        name_alter_cn: Name (alter/cn)
         name_en: Name (en)
+        name_cn: Name (cn)
       series_work:
         summary: Summary
         summary_en: Summary (en)
         work_id: Work
       staff:
         name_en: Name (en)
+        name_cn: Name (cn)
         name: Name
         resource_id: Person or Organization
         role_other_en: Role (other/en)
@@ -206,10 +220,13 @@ en:
         started_on: Started On
         synopsis_en: Synopsis (en)
         synopsis_source_en: Synopsis source (en)
+        synopsis_cn: Synopsis (cn)
+        synopsis_source_cn: Synopsis source (cn)
         synopsis_source: Synopsis source (ja)
         synopsis: Synopsis (ja)
         title_alter: Title (alter)
         title_alter_en: Title (alter/en)
+        title_cn: Title (cn)
         title_en: Title (en)
         title_kana: Title (kana)
         title: Title (ja)

@@ -21,13 +21,13 @@ zh-CN:
       activities:
         episode_record:
           created: '记录了'
-          more: '查看剩余的%{n}件记录'
+          more: '查看其余的%{n}件记录'
         status:
           changed: '更改了状态'
-          more: '查看剩余的%{n}件状态更改'
+          more: '查看其余的%{n}件状态更改'
         work_record:
           created: '记录了'
-          more: '查看剩余的%{n}件记录'
+          more: '查看其余的%{n}件记录'
       adsense:
         hide_ads_html: 成为 <a href="/supporters"> Annict Supporter </a> 后可关闭广告
       body:
@@ -35,9 +35,9 @@ zh-CN:
       deprecated_ratings_collapse:
         hint: 显示了以前记录中的4项评价
       favorite_button:
-        add_to_favorites: 加入至喜欢
+        add_to_favorites: 加入至收藏
         added_to_favorites: 已加入
-        hint: '加入至喜欢后、当与 %{resource_type} 相关的新作动画添加到 Annict 时将发送通知 (可以选择不接收通知)'
+        hint: '加入至收藏后，当%{resource_type}相关的新作添加到 Annict 时将发送通知 (可关闭)'
       mute_user_button:
         the_user_has_been_muted: 已静音
         the_user_has_been_unmuted: 已解除静音
@@ -170,7 +170,7 @@ zh-CN:
         sign_up_with_oauth: '使用 %{provider_name} 开始'
     options:
       hide_supporter_badge: 隐藏 Annict Supporter 的徽章
-      hide_supporter_badge_detail: 将隐藏显示在个人资料页面等处的 Annict Supporter 徽章。
+      hide_supporter_badge_detail: 将隐藏显示在个人资料页面及其他页面的 Annict Supporter 徽章。
       prevent_spoiler_of_episode_you_have_not_watched: 防止未记录章节被剧透
       prevent_spoiler_of_episode_you_have_not_watched_detail: 状态为在看、想看及搁置的动画，将隐藏未观看章节其他用户发布的感想。
       share_status_to_twitter: 更改状态时分享至Twitter
@@ -266,15 +266,15 @@ zh-CN:
     users:
       _validators:
         exists_active_oauth_applications: 已存在，无法退会。
-      allowed_locales_description: '您可以选择由哪种语言发布的文字（感想和评论等）显示。'
+      allowed_locales_description: '您可以选择显示由哪种语言发布的文字（感想和评论等）。'
       bye_bye: '已退回。(´・ω;:..'
       no_works: 暂无作品
     welcome:
       show:
         annict_features: Annict 可以
-        hero_description_html:  Annict (アニクト)是一个可以轻松记录动画的站点。<br>在这里记下看到了哪一集、从朋友的观看记录里探索、管理您的动画。
-        hero_description_mobile_html: Annict (アニクト)是一个可以轻松记录动画的站点。
-        hero_title_html: <span class="fw-bold">记下</span>看到的一切，一起<br class="d-sm-none"><span class="fw-bold">探索</span>动画吧。
+        hero_description_html:  Annict (アニクト)是一个可以轻松管理记录动画的站点。<br>在这里记下看到了哪一集、从朋友的观看记录里探索、管理您的动画。
+        hero_description_mobile_html: Annict (アニクト)是一个可以轻松管理记录动画的站点。
+        hero_title_html: <span class="fw-bold">记录</span>看到的一切，一起<br class="d-sm-none"><span class="fw-bold">探索</span>动画吧。
         lets_start_tracking: 现在就开始记录吧
     work_records:
       new:

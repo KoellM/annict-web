@@ -1,0 +1,15 @@
+- action_user = notification.action_user
+- like = notification.trackable
+- work_record = like.recipient
+
+span.me-1
+  = action_user.name_link
+| 点赞了
+span.mx-1
+  = work_record.work.title_link
+| 
+= link_to "记录", record_path(work_record.user.username, work_record.record)
+| 
+
+.small.text-muted
+  = local_time_ago_in_words(notification.created_at)

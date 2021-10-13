@@ -67,10 +67,10 @@ class Character < ApplicationRecord
   include Unpublishable
 
   DIFF_FIELDS = %i[
-    name name_en series_id nickname nickname_en birthday birthday_en age age_en
-    blood_type blood_type_en height height_en weight weight_en nationality nationality_en
-    occupation occupation_en description description_en name_kana description_source
-    description_source_en
+    name name_en name_cn series_id nickname nickname_en nickname_cn birthday birthday_en 
+    age age_en age_cn blood_type blood_type_en blood_type_cn height height_en height_cn weight weight_en weight_cn
+    nationality nationality_en nationality_cn occupation occupation_en occupation_cn
+    description description_en description_cn name_kana description_source description_source_en description_source_cn
   ].freeze
 
   belongs_to :series
@@ -85,6 +85,7 @@ class Character < ApplicationRecord
   validates :name, presence: true, uniqueness: {scope: :series_id}
   validates :description, presence_pair: :description_source
   validates :description_en, presence_pair: :description_source_en
+  validates :description_cn, presence_pair: :description_source_cn
 
   def favorites
     character_favorites

@@ -68,6 +68,10 @@ class Program < ApplicationRecord
     false
   end
 
+  def support_cn?
+    false
+  end
+
   def vod_title_url
     return "" if vod_title_code.blank?
 

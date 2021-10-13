@@ -43,7 +43,7 @@ class Staff < ApplicationRecord
   include Unpublishable
 
   DIFF_FIELDS = %i[
-    resource_id name role role_other sort_number name_en role_other_en
+    resource_id name role role_other sort_number name_en name_cn role_other_en role_other_cn
   ].freeze
 
   enumerize :role, in: %w[
@@ -100,6 +100,10 @@ class Staff < ApplicationRecord
     name_en.present? && resource.name_en.present?
   end
 
+  def support_cn?
+    name_cn.present? && resource.name_cn.present?
+  end
+
   def accurate_name
     return name if name == resource.name
     "#{name} (#{resource.name})"
@@ -111,8 +115,13 @@ class Staff < ApplicationRecord
   end
 
   def accurate_name_cn
-    return name_cn if name_cn == resource.name_cn
-    "#{name_cn} (#{resource.name_cn})"
+    if name_cn.blank? || resource.name_cn.blank?
+      return name if name == resource.name
+      "#{name} (#{resource.name})"
+    else
+      return name_cn if name_cn == resource.name_cn
+      "#{name_cn} (#{resource.name_cn})"
+    end
   end
 
   def local_name_with_old
@@ -127,7 +136,7 @@ class Staff < ApplicationRecord
 
   def local_role_other
     return role_other_cn if I18n.locale != :"zh-CN" && role_other_cn.present?
-    return role_other_en if I18n.locale != :ja && role_other_en.present?
+    return role_other_en if I18n.locale == :en && role_other_en.present?
     role_other
   end
 
@@ -136,5 +145,6 @@ class Staff < ApplicationRecord
   def set_name
     self.name = resource.name if name.blank? && resource.present?
     self.name_en = resource.name_en if name_en.blank? && resource&.name_en.present?
+    self.name_cn = resource.name_cn if name_cn.blank? && resource&.name_cn.present?
   end
 end

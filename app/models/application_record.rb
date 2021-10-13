@@ -5,7 +5,7 @@ class ApplicationRecord < ActiveRecord::Base
 
   self.abstract_class = true
 
-  LOCALES = %i[en ja other].freeze
+  LOCALES = %i[en ja zh-CN other].freeze
 
   def self.find_by_graphql_id(graphql_id)
     type_name, item_id = GraphQL::Schema::UniqueWithinType.decode(graphql_id)
@@ -64,7 +64,7 @@ class ApplicationRecord < ActiveRecord::Base
     property_cn = send("#{property_name}_cn".to_sym)
 
     return property_ja if I18n.locale == :ja
-    return property_cn if I18n.locale == :"zh-CN"
+    return property_cn if I18n.locale == :"zh-CN" && property_cn.present?
     return property_en if property_en.present?
 
     property_ja if fallback

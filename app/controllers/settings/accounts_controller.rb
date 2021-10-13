@@ -21,6 +21,8 @@ module Settings
       url = case @user.locale.to_s
       when "ja"
         ENV.fetch("ANNICT_URL")
+      when "zh-CN"
+        ENV.fetch("ANNICT_CN_URL")
       else
         ENV.fetch("ANNICT_EN_URL")
       end

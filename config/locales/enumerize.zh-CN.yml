@@ -13,8 +13,8 @@ zh-CN:
         ab: AB型
         o: O型
       gender:
-        female: 女性
-        male: 男性
+        female: 女
+        male: 男
     setting:
       slots_sort_type:
         started_at_asc: 以最新播放

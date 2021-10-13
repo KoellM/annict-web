@@ -6,5 +6,6 @@ json[:id] = series.id if params.fields_contain?("#{field_prefix}id")
 json[:name] = series.name if params.fields_contain?("#{field_prefix}name")
 json[:name_ro] = series.name_ro if params.fields_contain?("#{field_prefix}name_ro")
 json[:name_en] = series.name_en if params.fields_contain?("#{field_prefix}name_en")
+json[:name_cn] = series.name_cn if params.fields_contain?("#{field_prefix}name_cn")
 
 json

@@ -31,7 +31,7 @@ zh-CN:
     bulk_tracking: 批量记录...
     cancel: 取消
     cast: 演员
-    casts: 演员
+    casts: Cast
     category: 分类
     channel_groups: 频道分组
     channel_id: 频道ID
@@ -42,6 +42,7 @@ zh-CN:
     character: 角色
     characters: 角色
     characters2: 文字
+    chinese: 简体中文
     comment: 评论
     comment_alt: 感想
     comments_count: 感想数
@@ -66,12 +67,12 @@ zh-CN:
     external_services: 第三方服务
     fans: 粉丝
     faq: 常见问题
-    favorite_characters: 喜欢的角色
-    favorite_organizations: 喜欢的团体
-    favorite_people: 喜欢的人物
-    favorite_staffs: 喜欢的Staff
-    favorite_voice_actors: 喜欢的声优
-    favorites: 喜欢
+    favorite_characters: 收藏的角色
+    favorite_organizations: 收藏的团体
+    favorite_people: 收藏的人物
+    favorite_staffs: 收藏的Staff
+    favorite_voice_actors: 收藏的声优
+    favorites: 收藏
     finished: 结束
     first: First
     follow: 关注
@@ -96,7 +97,7 @@ zh-CN:
     music: 音乐
     my_anime_list: MyAnimeList
     my_records: 个人记录
-    n_works_watched: '看过%{count}作品'
+    n_works_watched: '看过%{count}部作品'
     next: NEXT
     next_episode: 下一章节
     next_page: 下一页
@@ -153,7 +154,7 @@ zh-CN:
     search: 搜索
     season: 季节
     seasons: 季节
-    seasonal_work: 按季动画
+    seasonal_work: 每季动画
     series: 系列
     series_with_name: '%{series_name}系列'
     series_works: 系列作品

@@ -31,7 +31,7 @@ class Series < ApplicationRecord
   include RootResourceCommon
   include Unpublishable
 
-  DIFF_FIELDS = %i[name name_en].freeze
+  DIFF_FIELDS = %i[name name_en name_cn].freeze
 
   has_many :series_works, dependent: :destroy
 

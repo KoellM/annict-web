@@ -25,6 +25,8 @@
           <%= series.name %>
           <br>
           <%= series.name_en.presence || "-" %>
+          <br>
+          <%= series.name_cn.presence || "-" %>
         </td>
         <td>
           <%= render Db::PublishingStateLabelComponent.new(resource: series) %>

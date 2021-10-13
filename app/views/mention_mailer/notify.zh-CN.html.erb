@@ -1,0 +1,4 @@
+<%= @sender.profile.name %> (@<%= @sender.username %>) 提及了您。<br>
+<br>
+<%= simple_format(@body) %><br>
+<%= link_to "回复", "#{ENV.fetch('ANNICT_URL')}#{@reply_path}" %>

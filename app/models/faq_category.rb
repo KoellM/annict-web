@@ -24,7 +24,7 @@ class FaqCategory < ApplicationRecord
 
   include SoftDeletable
 
-  enumerize :locale, in: %i[ja en]
+  enumerize :locale, in: %i[ja en zh-CN]
 
   has_many :faq_contents, dependent: :destroy
 end

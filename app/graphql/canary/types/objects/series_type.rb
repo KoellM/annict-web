@@ -17,6 +17,9 @@ module Canary
         field :name_en, String,
           null: false
 
+        field :name_cn, String,
+          null: false
+
         field :work_list, Canary::Connections::SeriesWorkConnection, null: true, connection: true do
           argument :order_by, Canary::Types::InputObjects::SeriesWorkOrder, required: false
         end

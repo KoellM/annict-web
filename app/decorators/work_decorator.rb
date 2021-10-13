@@ -54,10 +54,16 @@ module WorkDecorator
     simple_format synopsis_en
   end
 
+  def synopsis_cn_html
+    return "" if synopsis.blank?
+
+    simple_format synopsis_cn
+  end
+
   def local_synopsis(raw: false)
     text = case I18n.locale
     when :ja then synopsis
-    when :"zh-CN" then synopsis_cn
+    when :"zh-CN" then synopsis_cn.blank? ? synopsis : synopsis_cn
     when :en then synopsis_en
     end
 

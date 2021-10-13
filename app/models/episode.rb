@@ -54,7 +54,7 @@ class Episode < ApplicationRecord
   include GraphqlResolvable
 
   DIFF_FIELDS = %i[
-    number sort_number sc_count title prev_episode_id fetch_syobocal raw_number title_en
+    number sort_number sc_count title prev_episode_id fetch_syobocal raw_number title_en title_cn
   ].freeze
 
   counter_culture :work, column_name: ->(episode) { episode.published? ? :episodes_count : nil }

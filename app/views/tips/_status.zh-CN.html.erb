@@ -1,0 +1,6 @@
+<p>设置状态后，您可以管理以前看了什么，正在看什么等。</p>
+<p>可在「<%= link_to "本季动画", seasonal_work_list_path(ENV.fetch("ANNICT_CURRENT_SEASON")) %>」页面选择框选择状态。</p>
+
+<div class="text-center">
+  <%= link_to "前往「本季动画」页面", seasonal_work_list_path(ENV.fetch("ANNICT_CURRENT_SEASON")), class: "btn btn-primary" %>
+</div>

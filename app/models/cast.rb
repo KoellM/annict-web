@@ -39,7 +39,7 @@ class Cast < ApplicationRecord
   include DbActivityMethods
   include Unpublishable
 
-  DIFF_FIELDS = %i[person_id name part sort_number character_id name_en].freeze
+  DIFF_FIELDS = %i[person_id name part sort_number character_id name_en name_cn].freeze
 
   counter_culture :person, column_name: ->(cast) { cast.published? ? :casts_count : nil }
 
@@ -71,6 +71,10 @@ class Cast < ApplicationRecord
     name_en.present? && character.name_en.present? && person.name_en.present?
   end
 
+  def support_cn?
+    name_cn.present? && character.name_cn.present? && person.name_cn.present?
+  end
+
   def accurate_name
     return name if name == person.name
     "#{name} (#{person.name})"
@@ -96,5 +100,6 @@ class Cast < ApplicationRecord
   def set_name
     self.name = person.name if name.blank? && person.present?
     self.name_en = person.name_en if name_en.blank? && person&.name_en.present?
+    self.name_cn = person.name_cn if name_cn.blank? && person&.name_cn.present?
   end
 end

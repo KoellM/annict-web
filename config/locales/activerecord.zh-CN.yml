@@ -4,6 +4,7 @@ zh-CN:
       cast:
         character_id: キャラクター
         name_en: 角色名 (英语)
+        name_cn: 角色名 (中文)
         name: 角色名
         person_id: 演员
         sort_number: 排序编号
@@ -26,16 +27,20 @@ zh-CN:
         blood_type: 血型
         description_en: 角色介绍 (英语)
         description_source_en: 角色介绍来源 (英语)
+        description_cn: 角色介绍 (中文)
+        description_source_cn: 角色介绍来源 (中文)
         description_source: 角色介绍来源
         description: 角色介绍
         height_en: 身高 (英语)
         height: 身高
-        name_en: 名字 (英语)
-        name_kana: 名字 (假名)
+        name_en: 英文名
+        name_cn: 中文名
+        name_kana: 假名
         name: 名字
         nationality_en: 国籍 (英语)
         nationality: 国籍
         nickname_en: 昵称 (英语)
+        nickname_cn: 中文昵称
         nickname: 昵称
         occupation_en: 职业 (英语)
         occupation: 职业
@@ -63,6 +68,7 @@ zh-CN:
         sc_count: しょぼかる(Syobocal)编号
         sort_number: 排序编号
         title: 标题
+        title_cn: 中文标题
         title_en: 英文标题
       episode_record:
         body: 感想
@@ -84,10 +90,12 @@ zh-CN:
         uid: Client ID
       organization:
         state: 状态
-        name_en: 名字 (英语)
-        name_kana: 名字 (假名)
+        name_en: 英文名
+        name_cn: 中文名
+        name_kana: 假名
         name: 名字
         twitter_username_en: Twitter (英语)
+        twitter_username_cn: Twitter (中文)
         twitter_username: Twitter
         url_en: URL (英语)
         url: URL
@@ -101,20 +109,23 @@ zh-CN:
         gender_en: 性别 (英语)
         gender: 性别
         height: 身高
-        name_en: 名字 (英语)
-        name_kana: 名字 (假名)
+        name_en: 英文名
+        name_cn: 中文名
+        name_kana: 假名
         name: 名字
         nickname_en: 昵称 (英语)
+        nickname_cn: 昵称 (中文)
         nickname: 昵称
         prefecture_id: 出身地
         twitter_username_en: Twitter (英语)
+        twitter_username_cn: Twitter (中文)
         twitter_username: Twitter
         url_en: URL (英语)
         url: URL
         wikipedia_url_en: Wikipedia (英语)
         wikipedia_url: Wikipedia
       profile:
-        avatar: 个人资料图片
+        avatar: 头像
         background_image: 背景图片
         description: 介绍
         name: 名字
@@ -148,12 +159,14 @@ zh-CN:
         name_alter: 别名
         name_alter_en: 別名 (英语)
         name_en: 系列名 (英语)
+        name_cn: 系列名 (中文)
       series_work:
         summary: 相关性
         summary_en: 相关性 (英语)
         work_id: 动画
       staff:
-        name_en: 名字 (英语)
+        name_en: 英文名
+        name_cn: 中文名
         name: 名字
         resource_id: 个人或团体
         role_other_en: 职务 (其他/英语)
@@ -170,9 +183,9 @@ zh-CN:
         url: URL
         userland_category_id: 分类
       user:
-        allowed_locales: 显示语言
+        allowed_locales: 内容显示语言
         current_password: 当前密码
-        email_username: 电子邮箱或用户名
+        email_username: 邮箱或用户名
         email: 邮箱
         locale: 语言
         oauth_applications: OAuth 应用程序
@@ -205,15 +218,18 @@ zh-CN:
         started_on: 开始日期
         synopsis_en: 英文介绍
         synopsis_source_en: 英文介绍来源
+        synopsis_cn: 中文介绍
+        synopsis_source_cn: 中文介绍来源
         synopsis_source: 介绍来源
         synopsis: 介绍
         title_alter: 別名
         title_alter_en: 英文別名
+        title_cn: 中文标题
         title_en: 英文标题
         title_kana: 假名
         title: 标题
         twitter_hashtag: Twitter hashtag
-        twitter_username: 官方Twitter
+        twitter_username: 官方 Twitter
         wikipedia_url_en: 英文 Wikipedia
         wikipedia_url: Wikipedia
       work_image:

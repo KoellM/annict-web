@@ -1,0 +1,4 @@
+<%= @name %> (@<%= @username %>) 评论了文章《<%= @post_title %>》。<br>
+<br>
+<%= simple_format(@comment.body) %><br>
+<%= link_to "查看文章", forum_post_url(@comment.forum_post, host: @receiver.annict_host) %>

@@ -11,9 +11,11 @@ module Beta
         field :annict_id, Integer, null: false
         field :name, String, null: false
         field :name_en, String, null: false
+        field :name_cn, String, null: false
         field :role_text, String, null: false
         field :role_other, String, null: false
         field :role_other_en, String, null: false
+        field :role_other_cn, String, null: false
         field :sort_number, Integer, null: false
         field :work, Beta::Types::Objects::WorkType, null: false
         field :resource, Beta::Types::Unions::StaffResourceItem, null: false

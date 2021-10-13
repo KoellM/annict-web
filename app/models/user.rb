@@ -327,6 +327,7 @@ class User < ApplicationRecord
   def annict_host
     case locale
     when "ja" then ENV.fetch("ANNICT_HOST")
+    when "zh-CN" then ENV.fetch("ANNICT_CN_HOST")
     else
       ENV.fetch("ANNICT_EN_HOST")
     end
@@ -335,6 +336,7 @@ class User < ApplicationRecord
   def preferred_annict_url
     case locale
     when "ja" then ENV.fetch("ANNICT_URL")
+    when "zh-CN" then ENV.fetch("ANNICT_CN_URL")
     else
       ENV.fetch("ANNICT_EN_URL")
     end

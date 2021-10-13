@@ -73,7 +73,7 @@ module Db
         :birthday, :birthday_en, :age, :age_en, :blood_type, :blood_type_en, :height,
         :height_en, :height_cn, :weight, :weight_en, :weight_cn, :nationality, :nationality_en, :nationality_cn, :occupation,
         :occupation_en, :occupation_cn, :description, :description_en, :description_cn, :description_source,
-        :description_source_en, :description_cn
+        :description_source_en, :description_source_cn
       )
     end
   end

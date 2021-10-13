@@ -60,8 +60,8 @@ class Person < ApplicationRecord
 
   DIFF_FIELDS = %i[
     prefecture_id name name_kana nickname gender url wikipedia_url twitter_username
-    birthday blood_type height name_en nickname_en url_en wikipedia_url_en
-    twitter_username_en
+    birthday blood_type height name_cn name_en nickname_cn nickname_en url_cn url_en
+    wikipedia_url_cn wikipedia_url_en twitter_username_cn twitter_username_en
   ].freeze
 
   enumerize :blood_type, in: %i[a b ab o]
@@ -69,8 +69,10 @@ class Person < ApplicationRecord
 
   validates :name, presence: true, uniqueness: true
   validates :url, url: {allow_blank: true}
+  validates :url_cn, url: {allow_blank: true}
   validates :url_en, url: {allow_blank: true}
   validates :wikipedia_url, url: {allow_blank: true}
+  validates :wikipedia_url_cn, url: {allow_blank: true}
   validates :wikipedia_url_en, url: {allow_blank: true}
 
   belongs_to :prefecture, optional: true

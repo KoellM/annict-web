@@ -76,6 +76,13 @@ module Headers
                         h.tag :i, class: "fas fa-external-link-alt ms-1 small"
                       end
                     end
+                  elsif locale_zh_cn? && @work.official_site_url_cn.present?
+                    h.tag :li, class: "list-inline-item" do
+                      h.tag :a, href: @work.official_site_url_cn, target: "_blank", rel: "noopener" do
+                        h.text t("activerecord.attributes.work.official_site_url")
+                        h.tag :i, class: "fas fa-external-link-alt ms-1 small"
+                      end
+                    end
                   end
 
                   if locale_ja? && @work.wikipedia_url.present?
@@ -88,6 +95,13 @@ module Headers
                   elsif locale_en? && @work.wikipedia_url_en.present?
                     h.tag :li, class: "list-inline-item" do
                       h.tag :a, href: @work.wikipedia_url_en, target: "_blank", rel: "noopener" do
+                        h.text t("activerecord.attributes.work.wikipedia_url")
+                        h.tag :i, class: "fas fa-external-link-alt ms-1 small"
+                      end
+                    end
+                  elsif locale_zh_cn? && @work.wikipedia_url_cn.present?
+                    h.tag :li, class: "list-inline-item" do
+                      h.tag :a, href: @work.wikipedia_url_cn, target: "_blank", rel: "noopener" do
                         h.text t("activerecord.attributes.work.wikipedia_url")
                         h.tag :i, class: "fas fa-external-link-alt ms-1 small"
                       end

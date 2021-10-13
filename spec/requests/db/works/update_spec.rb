@@ -56,6 +56,7 @@ describe "PATCH /db/works/:id", type: :request do
         title: "タイトルUpdated",
         title_kana: "タイトル (かな)",
         title_alter: "タイトルの別名",
+        title_cn: "タイトル (中国語)",
         title_en: "タイトル (英)",
         title_alter_en: "タイトルの別名 (英)",
         media: "tv",

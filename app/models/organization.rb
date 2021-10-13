@@ -42,14 +42,16 @@ class Organization < ApplicationRecord
   include Unpublishable
 
   DIFF_FIELDS = %i[
-    name name_kana url wikipedia_url twitter_username name_kana name_en url_en
-    wikipedia_url_en twitter_username_en
+    name name_kana url wikipedia_url twitter_username name_kana name_en name_cn url_en url_cn
+    wikipedia_url_en wikipedia_url_cn twitter_username_en twitter_username_cn
   ].freeze
 
   validates :name, presence: true, uniqueness: true
   validates :url, url: {allow_blank: true}
+  validates :url_cn, url: {allow_blank: true}
   validates :url_en, url: {allow_blank: true}
   validates :wikipedia_url, url: {allow_blank: true}
+  validates :wikipedia_url_cn, url: {allow_blank: true}
   validates :wikipedia_url_en, url: {allow_blank: true}
 
   has_many :db_activities, as: :trackable, dependent: :destroy

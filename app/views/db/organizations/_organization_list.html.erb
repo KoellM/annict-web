@@ -27,6 +27,8 @@
           <%= organization.name_kana.presence || "-" %>
           <br>
           <%= organization.name_en.presence || "-" %>
+          <br>
+          <%= organization.name_cn.presence || "-" %>
         </td>
         <td>
           <%= render Db::PublishingStateLabelComponent.new(resource: organization) %>

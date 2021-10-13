@@ -125,16 +125,25 @@ module Canary
         field :synopsis_en, String,
           null: false
 
+        field :synopsis_cn, String,
+          null: false
+
         field :synopsis_html, String,
           null: false
 
         field :synopsis_en_html, String,
           null: false
 
+        field :synopsis_cn_html, String,
+          null: false
+
         field :synopsis_source, String,
           null: false
 
         field :synopsis_source_en, String,
+          null: false
+
+        field :synopsis_source_cn, String,
           null: false
 
         field :episodes, Canary::Types::Objects::EpisodeType.connection_type,
@@ -258,6 +267,10 @@ module Canary
 
         def synopsis_en_html
           object.decorate.synopsis_en_html
+        end
+
+        def synopsis_cn_html
+          object.decorate.synopsis_cn_html
         end
       end
     end

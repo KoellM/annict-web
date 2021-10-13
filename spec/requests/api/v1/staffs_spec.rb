@@ -59,6 +59,7 @@ describe "Api::V1::Staffs" do
           "person" => {
             "id" => staff.resource.id,
             "name" => staff.resource.name,
+            "name_cn" => staff.resource.name_cn,
             "name_kana" => staff.resource.name_kana,
             "name_en" => staff.resource.name_en,
             "nickname" => staff.resource.nickname,

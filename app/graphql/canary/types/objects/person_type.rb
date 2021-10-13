@@ -12,15 +12,20 @@ module Canary
         field :name, String, null: false
         field :name_kana, String, null: false
         field :name_en, String, null: false
+        field :name_cn, String, null: false
         field :nickname, String, null: false
         field :nickname_en, String, null: false
+        field :nickname_cn, String, null: false
         field :gender_text, String, null: false
         field :url, String, null: false
         field :url_en, String, null: false
+        field :url_cn, String, null: false
         field :wikipedia_url, String, null: false
         field :wikipedia_url_en, String, null: false
+        field :wikipedia_url_cn, String, null: false
         field :twitter_username, String, null: false
         field :twitter_username_en, String, null: false
+        field :twitter_username_cn, String, null: false
         field :birthday, String, null: false
         field :blood_type, String, null: false
         field :height, String, null: false

@@ -20,7 +20,7 @@
 
         <div class="mb-3">
           <%= f.label :locale, class: "form-label" %>
-          <% options = options_for_select([[t("noun.japanese"), "ja"], [t("noun.english"), "en"]], current_user.locale) %>
+          <% options = options_for_select([[t("noun.japanese"), "ja"], [t("noun.english"), "en"], [t("noun.chinese"), "zh-CN"]], current_user.locale) %>
           <%= f.select :locale, options, {}, { class: "form-control" } %>
         </div>
 
