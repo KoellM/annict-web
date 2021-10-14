@@ -139,7 +139,7 @@ zh-CN:
           index: 全部放送信息
           new: 新建放送信息
         work_images:
-          show: 作品图标
+          show: 作品图片
         works:
           activities: 活动
           edit: '%{title}'
@@ -259,7 +259,7 @@ zh-CN:
       videos:
         index: 动画「%{title}」的视频
       welcome:
-        show: 构建、分享所见的动画世界
+        show: 记录、分享所见的动画世界
       work_records:
         edit: 编辑记录
         index: 动画「%{work_title}」的全部记录
