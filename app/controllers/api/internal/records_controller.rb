@@ -14,6 +14,7 @@ module Api::Internal
 
       if @record.episode_record?
         @form = Forms::EpisodeRecordForm.new(episode_record_form_params)
+        @form.user = current_user
         @form.record = @record
         @form.episode = @record.episode_record.episode
 
@@ -24,6 +25,7 @@ module Api::Internal
         Updaters::EpisodeRecordUpdater.new(user: current_user, form: @form).call
       else
         @form = Forms::WorkRecordForm.new(work_record_form_params)
+        @form.user = current_user
         @form.record = @record
         @form.work = @record.work
 
@@ -44,7 +46,10 @@ module Api::Internal
     end
 
     def work_record_form_params
-      params.required(:forms_work_record_form).permit(:comment, :rating_overall, :share_to_twitter)
+      params.required(:forms_work_record_form).permit(
+        :comment, :share_to_twitter,
+        :rating_overall, :rating_animation, :rating_character, :rating_story, :rating_music
+      )
     end
   end
 end
