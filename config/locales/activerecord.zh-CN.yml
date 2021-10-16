@@ -133,7 +133,7 @@ zh-CN:
       slot:
         channel_id: 频道
         episode_id: 章节
-        irregular: 异常次数
+        irregular: 非常规回
         number: 章节数
         program_id: 放送信息
         rebroadcast: 再放送
@@ -224,6 +224,7 @@ zh-CN:
         synopsis: 介绍
         title_alter: 別名
         title_alter_en: 英文別名
+        title_alter_cn: 中文别名
         title_cn: 中文标题
         title_en: 英文标题
         title_kana: 假名

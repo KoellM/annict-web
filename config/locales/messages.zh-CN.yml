@@ -66,7 +66,7 @@ zh-CN:
       no_staffs: 暂无 Staff
       no_works: 暂无作品
     _page_hints:
-      channel_list_html: 在关注频道后节目信息设置后，%{link}页面将显示节目的播出信息。
+      channel_list_html: 关注频道并设置节目信息后，%{link}页面将显示节目的播出信息。
       friend_list_html: '在%{link}页面关联 Twitter 后，将显示关注的 Annict 用户。'
       home: 时间线上将显示关注用户的最新动态。
       notification_list: 在被关注及记录被点赞时，将会发送通知信息。

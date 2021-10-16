@@ -218,7 +218,7 @@ zh-CN:
       related_works:
         index: 动画「%{title}」的相关作品
       searches:
-        show: '搜索%{q}'
+        show: '%{q} 搜索结果'
       settings:
         accounts:
           show: 账户

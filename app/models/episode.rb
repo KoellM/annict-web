@@ -144,7 +144,7 @@ class Episode < ApplicationRecord
   end
 
   def local_number
-    return number if I18n.locale == :ja
+    return number if I18n.locale == :ja || :"zh_CN"
     return "##{raw_number}" if raw_number
 
     number

@@ -7,6 +7,7 @@ class AddChineseSupport < ActiveRecord::Migration[6.1]
     add_column :episodes, :number_cn, :string, default: "", null: false
     # Works
     add_column :works, :title_cn, :string, default: "", null: false
+    add_column :works, :title_alter_cn, :string, default: "", null: false
     add_column :works, :official_site_url_cn, :string, default: "", null: false
     add_column :works, :wikipedia_url_cn, :string, default: "", null: false
     add_column :works, :synopsis_cn, :string, default: "", null: false

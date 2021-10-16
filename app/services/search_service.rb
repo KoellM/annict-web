@@ -13,7 +13,7 @@ class SearchService
   end
 
   def works
-    collection(Work).ransack(title_or_title_en_or_title_cn_or_title_kana_or_title_alter_or_title_alter_en_title_alter_cn_cont_any: keywords).result
+    collection(Work).ransack(title_or_title_en_or_title_cn_or_title_kana_or_title_alter_or_title_alter_en_or_title_alter_cn_cont_any: keywords).result
   end
 
   def people
