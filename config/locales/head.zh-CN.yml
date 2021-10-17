@@ -19,11 +19,11 @@ zh-CN:
           index: '查看动画「%{title}」的章节！'
           show: '查看动画「%{work_title}」%{episode_title_with_number}的感想！'
         favorite_characters:
-          index: '查看 %{profile_name} (%{username}) 收藏的角色！'
+          index: '查看 %{profile_name} (%{username}) 喜欢的角色！'
         favorite_organizations:
-          index: '查看 %{profile_name} (%{username}) 收藏的团体！'
+          index: '查看 %{profile_name} (%{username}) 喜欢的团体！'
         favorite_people:
-          index: '查看 %{profile_name} (%{username}) 收藏的人物！'
+          index: '查看 %{profile_name} (%{username}) 喜欢的人物！'
         libraries:
           show: '查看 %{profile_name} (%{username})の%{action}アニメをチェック！'
         organization_fans:
@@ -159,11 +159,11 @@ zh-CN:
         index: 动画「%{title}」的章节
         show: 动画「%{work_title}」%{episode_title_with_number}
       favorite_characters:
-        index: '%{profile_name} (%{username}) 收藏的角色'
+        index: '%{profile_name} (%{username}) 喜欢的角色'
       favorite_organizations:
-        index: '%{profile_name} (%{username}) 收藏的团体'
+        index: '%{profile_name} (%{username}) 喜欢的团体'
       favorite_people:
-        index: '%{profile_name} (%{username}) 收藏的人物'
+        index: '%{profile_name} (%{username}) 喜欢的人物'
       forum:
         categories:
           show: '%{name}'

@@ -4,7 +4,7 @@ zh-CN:
     account_deletion: 删除账户
     actions: 操作
     activities: 活动
-    add_alt: 新增
+    add_alt: 添加
     after: After
     ago: 前
     aired: 开始日期
@@ -70,12 +70,12 @@ zh-CN:
     external_services: 第三方服务
     fans: 粉丝
     faq: 常见问题
-    favorite_characters: 收藏的角色
-    favorite_organizations: 收藏的团体
-    favorite_people: 收藏的人物
-    favorite_staffs: 收藏的Staff
-    favorite_voice_actors: 收藏的声优
-    favorites: 收藏
+    favorite_characters: 喜欢的角色
+    favorite_organizations: 喜欢的团体
+    favorite_people: 喜欢的人物
+    favorite_staffs: 喜欢的Staff
+    favorite_voice_actors: 喜欢的声优
+    favorites: 喜欢
     finished: 结束
     first: First
     follow: 关注

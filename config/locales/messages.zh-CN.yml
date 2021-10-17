@@ -35,9 +35,9 @@ zh-CN:
       deprecated_ratings_collapse:
         hint: 显示了以前记录中的4项评价
       favorite_button:
-        add_to_favorites: 加入至收藏
+        add_to_favorites: 加入至喜欢列表
         added_to_favorites: 已加入
-        hint: '加入至收藏后，当%{resource_type}相关的新作添加到 Annict 时将发送通知 (可关闭)'
+        hint: '加入至喜欢列表后，当%{resource_type}相关的新作添加到 Annict 时将发送通知 (可关闭)'
       mute_user_button:
         the_user_has_been_muted: 已静音
         the_user_has_been_unmuted: 已解除静音
@@ -45,7 +45,7 @@ zh-CN:
         select_program: 选择节目信息
       record_form_options_collapse:
         hint_on_watched_at_for_non_supporters_html: <i class="far fa-sparkles me-1 text-warning"></i>仅限 <a href="/supporters" target="_blank">Annict Supporters</a> 设置。
-        hint_on_watched_at_html: 设置观看日期后记录在时间线上不显示。<br>默认为当前日期。
+        hint_on_watched_at_html: 默认为当前日期<br>更改观看日期后时间线上将不显示此记录。
       sign_up_modal:
         body: 注册后可以使用本功能。
     _empty:
@@ -75,7 +75,7 @@ zh-CN:
       friend_list_html: '在%{link}页面关联 Twitter 后，将显示关注的 Annict 用户。'
       home: 时间线上将显示关注用户的最新动态。
       notification_list: 在被关注及记录被点赞时，将会发送通知信息。
-      track_html: 正在看的动画。<br>在%{link}页面关注频道后，将显示节目的播出信息。
+      track_html: 正在看的动画。<br>在%{link}页面关注频道并设置节目信息后，将显示节目的播出信息。
     _validators:
       and_other_are_required: 及%{column_name}为必填
       is_required_true_or_false: 必须为 `true` 或 `false`
@@ -145,7 +145,7 @@ zh-CN:
       collection_items:
         new:
           disabled_form_hint1: 无可选收藏
-          disabled_form_hint2_html: 可<a data-turbo-frame="_top" href="/@%{username}/collections">点击此链接</a>新建收藏。
+          disabled_form_hint2_html: 可<a data-turbo-frame="_top" href="/@%{username}/collections">点击此链接</a>新增收藏。
     friends:
       no_sns_friends: 暂无朋友
       no_users: 暂无用户
