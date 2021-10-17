@@ -12,6 +12,9 @@ zh-CN:
         characters:
           index: 查看动画「%{title}」的角色！
           show: 在 Annict 查看 %{name}！
+        collections:
+          index: '查看 %{profile_name} (%{username}) 的收藏列表。'
+          show: '查看 %{profile_name} (%{username}) 的收藏列表。'
         episodes:
           index: '查看动画「%{title}」的章节！'
           show: '查看动画「%{work_title}」%{episode_title_with_number}的感想！'
@@ -72,6 +75,13 @@ zh-CN:
       characters:
         index: '动画「%{title}」的角色'
         show: '%{name}'
+      collection_items:
+        edit: "编辑 %{collection_name} > %{work_title}"
+      collections:
+        edit: "编辑 %{collection_name}"
+        index: '%{profile_name} 的收藏动画'
+        new: 新增收藏
+        show: "%{collection_name} | %{profile_name} 的收藏动画"
       comments:
         edit: 编辑评论
       db:

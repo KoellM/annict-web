@@ -79,3 +79,5 @@ zh-CN:
           invalid: '无效: 无法找到%{value}'
         db/series_work_rows_form:
           invalid: '无效: 无法找到%{value}'
+        recordable:
+          watched_at_cannot_be_in_the_future: 请输入截至现在的时间

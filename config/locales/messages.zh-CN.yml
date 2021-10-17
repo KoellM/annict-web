@@ -43,16 +43,21 @@ zh-CN:
         the_user_has_been_unmuted: 已解除静音
       program_selector:
         select_program: 选择节目信息
+      record_form_options_collapse:
+        hint_on_watched_at_for_non_supporters_html: <i class="far fa-sparkles me-1 text-warning"></i>仅限 <a href="/supporters" target="_blank">Annict Supporters</a> 设置。
+        hint_on_watched_at_html: 设置观看日期后记录在时间线上不显示。<br>默认为当前日期。
       sign_up_modal:
         body: 注册后可以使用本功能。
     _empty:
       no_activities: 暂无动态
       no_anime: 暂无动画
       no_characters: 暂无角色
+      no_collections: 暂无收藏
       no_comments: 暂无感想
       no_episodes: 暂无章节
       no_followers: 暂无粉丝
       no_following: 暂无关注
+      no_items: 暂无内容
       no_organizations: 暂无团体
       no_people: 暂无人物
       no_programs: 暂无节目信息
@@ -85,6 +90,8 @@ zh-CN:
       supported_vod: Annict 支持的动画服务
     character_fans:
       no_users: 没有粉丝
+    collections:
+      new: 新增收藏
     comments:
       comment_form_placeholder: 评论记录吧！
       create: 评论
@@ -134,6 +141,11 @@ zh-CN:
         no_comments: 暂无评论
         no_posts: 暂无文章
         updated: 已更新
+    fragment:
+      collection_items:
+        new:
+          disabled_form_hint1: 无可选收藏
+          disabled_form_hint2_html: 可<a data-turbo-frame="_top" href="/@%{username}/collections">点击此链接</a>新建收藏。
     friends:
       no_sns_friends: 暂无朋友
       no_users: 暂无用户
@@ -247,6 +259,8 @@ zh-CN:
         mail_has_sent: 已发送注册链接
       new:
         description_html: 将向输入的邮箱地址发送注册链接。
+    supporters:
+      gumroad_subscriber_not_found: 无法从 Gumroad 获取会员信息。
     tracks:
       episodes_you_have_watched: 已观看章节
       no_trackable_episodes: 暂无未观看章节

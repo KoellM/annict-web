@@ -1,6 +1,12 @@
 zh-CN:
   form:
     attributes:
+      forms/collection_form:
+        description: 介绍
+        name: 名称
+      forms/collection_item_form:
+        body: 内容
+        collection: 收藏
       forms/work_record_form:
         comment: 感想
         rating_animation: 视频
@@ -8,9 +14,11 @@ zh-CN:
         rating_music: 音乐
         rating_overall: 整体
         rating_story: 故事
+        watched_at: 观看日期
       forms/episode_record_form:
         comment: 感想
         rating: 评价
+        watched_at: 观看日期
       forms/registration_form:
         email: 邮箱
         terms_and_privacy_policy_agreement: 服务条款及隐私政策

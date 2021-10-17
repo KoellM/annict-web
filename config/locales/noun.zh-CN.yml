@@ -4,6 +4,7 @@ zh-CN:
     account_deletion: 删除账户
     actions: 操作
     activities: 活动
+    add_alt: 新增
     after: After
     ago: 前
     aired: 开始日期
@@ -42,6 +43,7 @@ zh-CN:
     character: 角色
     characters: 角色
     characters2: 文字
+    collections: 收藏
     chinese: 简体中文
     comment: 评论
     comment_alt: 感想
@@ -49,6 +51,7 @@ zh-CN:
     comments_count_shorten: 评论
     contents: 内容
     column: 项
+    create: 新增
     completed: 看过
     current_season: 本季动画
     current_season_shoten: 本季动画
@@ -103,9 +106,11 @@ zh-CN:
     next_page: 下一页
     next_season: 下季动画
     no_select: 未选择
+    note_alt: 笔记
     notification: 通知
     official_site: 官方网站
     on_hold: 搁置
+    options: 选项
     or: 或者
     organization: 团体
     organizations: 团体
