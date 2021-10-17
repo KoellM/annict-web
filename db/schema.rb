@@ -1312,6 +1312,7 @@ ActiveRecord::Schema.define(version: 2021_10_17_074902) do
     t.float "start_episode_raw_number", default: 1.0, null: false
     t.datetime "deleted_at"
     t.string "title_alter", default: "", null: false
+    t.string "title_alter_cn", default: "", null: false
     t.string "title_alter_en", default: "", null: false
     t.datetime "unpublished_at"
     t.string "title_cn", default: "", null: false
