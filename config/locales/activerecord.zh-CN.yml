@@ -246,7 +246,7 @@ zh-CN:
         title: 标题
         body: 感想
         mutation_error: ''
-        rating_animation_state: 视频
+        rating_animation_state: 动画
         rating_music_state: 音乐
         rating_story_state: 故事
         rating_character_state: 角色
