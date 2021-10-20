@@ -5,12 +5,8 @@
   function gtag(){dataLayer.push(arguments);}
 </script>
 
-<% if Rails.env.production? %>
+<% if display_ads? %>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=<%= ENV.fetch('GOOGLE_AD_CLIENT') %>" crossorigin="anonymous"></script>
-
-<script>
-  // (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <% end %>
 
 <%= ann_display_meta_tags %>

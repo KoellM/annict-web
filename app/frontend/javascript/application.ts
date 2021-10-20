@@ -22,6 +22,17 @@ document.addEventListener('turbo:load', (_event) => {
     gtag('config', annConfig.ga.trackingId);
   }
 
+  const ads = document.querySelectorAll('.adsbygoogle');
+  if (ads.length > 0) {
+    ads.forEach(function (ad) {
+      if (ad.firstChild) {
+        ad.removeChild(ad.firstChild);
+      }
+      (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+      (window as any).adsbygoogle.push({});
+    });
+  }
+
   Cookies.set('ann_time_zone', getTimeZone(), {
     domain: `.${annConfig.domain}`,
     secure: annConfig.rails.env === 'production',
