@@ -244,7 +244,7 @@ module Canary
           end
         end
 
-        def is_no_episodes # rubocop:disable Naming/PredicateName
+        def is_no_episodes
           object.no_episodes?
         end
 
